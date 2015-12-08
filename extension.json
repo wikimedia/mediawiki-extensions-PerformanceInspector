@@ -1,0 +1,34 @@
+{
+    "name": "PerformanceInspector",
+    "version": "0.1.0",
+    "author": [
+        "Peter Hedenskog"
+    ],
+    "url": "https://www.mediawiki.org/wiki/Extension:PerformanceInspector",
+    "descriptionmsg": "performanceinspector-desc",
+    "license-name": "GPL-2.0+",
+    "type": "other",
+    "Hooks": {
+        "BeforePageDisplay": [
+            "PerformanceInspectorHooks::onBeforePageDisplay"
+        ]
+    },
+    "MessagesDirs": {
+        "BoilerPlate": [
+            "i18n"
+        ]
+    },
+    "ResourceModules": {
+        "ext.PerformanceInspector.startup": {
+            "scripts": "ext.PerformanceInspector.startup.js"
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "modules",
+        "remoteExtPath": "PerformanceInspector/modules"
+    },
+    "AutoloadClasses": {
+        "PerformanceInspectorHooks": "PerformanceInspector.hooks.php"
+    },
+    "manifest_version": 1
+}
