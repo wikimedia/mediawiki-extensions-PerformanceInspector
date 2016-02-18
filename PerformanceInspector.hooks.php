@@ -17,4 +17,13 @@ class PerformanceInspectorHooks {
 		}
 		return true;
 	}
+
+	public static function onBaseTemplateToolbox( BaseTemplate $baseTemplate, array &$toolbox ) {
+			$toolbox['performanceinspector'] = array(
+				'text' => $baseTemplate->getMsg( 'performanceinspector-portlet-link' )->text(),
+				'href' => '#',
+				'id' => 't-performanceinspector'
+			);
+		return true;
+	}
 }

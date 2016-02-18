@@ -1,6 +1,43 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "performanceinspector-desc": "This extension shows you page performance metrics."
+	"@metadata": {
+		"authors": []
+	},
+	"performanceinspector-desc": "This extension shows you page performance metrics.",
+	"performanceinspector-portlet-link": "Performance inspector",
+
+	"performanceinspector-dialog-title": "Performance inspector",
+	"performanceinspector-dialog-summary": "Summary",
+	"performanceinspector-dialog-cancel": "Cancel",
+
+	"performanceinspector-modules-summary-top-list": "Top three largest modules",
+	"performanceinspector-modules-summary-total-size": "The total size of all modules ",
+
+	"performanceinspector-modules-name": "Modules",
+	"performanceinspector-modules-label": "Modules information",
+
+	"performanceinspector-modules-css-title": "CSS",
+	"performanceinspector-modules-css-column-module": "Module",
+	"performanceinspector-modules-css-column-allselectors": "allSelectors",
+	"performanceinspector-modules-css-column-matchedselectors": "matchedselectors",
+	"performanceinspector-modules-css-column-percentmatched": "percentMatched",
+
+	"performanceinspector-modules-localstorage-title": "Local storage",
+	"performanceinspector-modules-localstorage-disabled": "Local storage is disabled.",
+	"performanceinspector-modules-localstorage-hits": "Hits",
+	"performanceinspector-modules-localstorage-misses": "Misses",
+	"performanceinspector-modules-localstorage-expired": "Expired",
+	"performanceinspector-modules-localstorage-totalsize": "Total size",
+
+	"performanceinspector-backendtime-name": "Backend time",
+	"performanceinspector-backendtime-label": "Backend time",
+	"performanceinspector-backendtime-summary-above-medium": "The page took $1 {{PLURAL:$1| ms | ms }} to render in the backend.",
+	"performanceinspector-backendtime-time-spent": "The page took $1 {{PLURAL:$1| ms | ms }} to render in the backend.",
+
+	"performanceinspector-pagesize-name": "Page size",
+	"performanceinspector-pagesize-label": "Page size",
+	"performanceinspector-pagesize-missing-html-size": "Warning: We miss the size of the HTML in the total size.",
+	"performanceinspector-pagesize-column-totalsize": "Total",
+	"performanceinspector-pagesize-column-imagesize": "Image",
+	"performanceinspector-pagesize-column-othersize": "Others"
+
 }

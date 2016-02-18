@@ -1,6 +1,41 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "performanceinspector-desc": "{{desc|name=PerformanceInspector|url=http://www.mediawiki.org/wiki/Extension:PerformanceInspector}}"
+	"@metadata": {
+		"authors": []
+	},
+	"performanceinspector-desc": "{{desc|name=PerformanceInspector|url=http://www.mediawiki.org/wiki/Extension:PerformanceInspector}}",
+	"performanceinspector-portlet-link": "The name of the link in the portlet menu, when the inspector is activated.",
+	"performanceinspector-dialog-title": "The heading in the dialog that displayes the inspector.",
+	"performanceinspector-dialog-summary": "The name of the summary field for all collected data for the inspector",
+	"performanceinspector-dialog-cancel": "The text of the cancel button in the dialog",
+
+	"performanceinspector-modules-summary-top-list": "Heading for the top list of largest modules in the summary section.",
+	"performanceinspector-modules-summary-total-size": "The total weight of all modules, displayed in the summary section",
+	"performanceinspector-modules-name": "The name of the module part of the dialog",
+	"performanceinspector-modules-label": "The label of the module part of the dialog",
+
+	"performanceinspector-modules-css-title": "The heading for the CSS section",
+	"performanceinspector-modules-css-column-module": "The column name for modules in the CSS section",
+	"performanceinspector-modules-css-column-allselectors": "The column name for allSelectors in the CSS section",
+	"performanceinspector-modules-css-column-matchedselectors": "The column name for matchedselectors in the CSS section",
+	"performanceinspector-modules-css-column-percentmatched": "The column name for percentMatched in the CSS section",
+
+	"performanceinspector-modules-localstorage-title": "The heading for the Local storage section",
+	"performanceinspector-modules-localstorage-disabled": "This is displayed if local storage is disabled",
+	"performanceinspector-modules-localstorage-hits": "The number of hits in local storage",
+	"performanceinspector-modules-localstorage-misses": "The number of misses in local storage",
+	"performanceinspector-modules-localstorage-expired": "The number of modules that was expired in local storage",
+	"performanceinspector-modules-localstorage-totalsize": "The total size of modules in local storage",
+
+	"performanceinspector-backendtime-name": "The name of the backend part of the dialog",
+	"performanceinspector-backendtime-label": "The label of the backend part of the dialog",
+	"performanceinspector-backendtime-summary-above-medium": "Text displayed when the backend time is larger than a predefined value.",
+	"performanceinspector-backendtime-time-spent": "Display the total time spent in backend in the dialog ",
+
+	"performanceinspector-pagesize-name": "The name of the page size of the dialog",
+	"performanceinspector-pagesize-label": "The label of the page size of the dialog",
+	"performanceinspector-pagesize-missing-html-size": "Warning text displayed aboy that we are missing the HTML size from the total size",
+	"performanceinspector-pagesize-column-totalsize": "Column name for the total size",
+	"performanceinspector-pagesize-column-imagesize": "Column name for image size",
+	"performanceinspector-pagesize-column-othersize": "Column name for all other assets except images"
+
 }

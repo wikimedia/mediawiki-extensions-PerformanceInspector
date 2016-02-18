@@ -1,0 +1,10 @@
+.ct-series-a .ct-bar {
+  /* Colour of your bars */
+  stroke: #006496;
+  /* The width of your bars */
+  stroke-width: 20px;
+}
+
+.ct-label {
+  color: black;
+}

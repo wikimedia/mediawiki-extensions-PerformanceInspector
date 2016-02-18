@@ -1,34 +1,84 @@
 {
-    "name": "PerformanceInspector",
-    "version": "0.1.0",
-    "author": [
-        "Peter Hedenskog"
-    ],
-    "url": "https://www.mediawiki.org/wiki/Extension:PerformanceInspector",
-    "descriptionmsg": "performanceinspector-desc",
-    "license-name": "GPL-2.0+",
-    "type": "other",
-    "Hooks": {
-        "BeforePageDisplay": [
-            "PerformanceInspectorHooks::onBeforePageDisplay"
-        ]
-    },
-    "MessagesDirs": {
-        "BoilerPlate": [
-            "i18n"
-        ]
-    },
-    "ResourceModules": {
-        "ext.PerformanceInspector.startup": {
-            "scripts": "ext.PerformanceInspector.startup.js"
-        }
-    },
-    "ResourceFileModulePaths": {
-        "localBasePath": "modules",
-        "remoteExtPath": "PerformanceInspector/modules"
-    },
-    "AutoloadClasses": {
-        "PerformanceInspectorHooks": "PerformanceInspector.hooks.php"
-    },
-    "manifest_version": 1
+	"name": "PerformanceInspector",
+	"version": "0.1.0",
+	"author": [ "Peter Hedenskog" ],
+	"url": "https://www.mediawiki.org/wiki/Extension:PerformanceInspector",
+	"descriptionmsg": "performanceinspector-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"Hooks": {
+		"BeforePageDisplay": [ "PerformanceInspectorHooks::onBeforePageDisplay" ],
+		"BaseTemplateToolbox": [ "PerformanceInspectorHooks::onBaseTemplateToolbox" ]
+	},
+	"MessagesDirs": {
+		"BoilerPlate": [ "i18n" ]
+	},
+	"ResourceModules": {
+		"ext.PerformanceInspector.startup": {
+			"scripts": "ext.PerformanceInspector.startup.js",
+			"messages": "performanceinspector-portlet-link"
+		},
+		"ext.PerformanceInspector.analyze": {
+			"scripts": [
+				"ext.PerformanceInspector.view.js",
+				"chartist/chartist.js",
+				"info/ext.PerformanceInspector.modules.js",
+				"info/ext.PerformanceInspector.backendtime.js",
+				"info/ext.PerformanceInspector.pagesize.js"
+			],
+			"styles": [
+				"chartist/chartist.css",
+				"css/ext.PerformanceInspector.css"
+			],
+			"dependencies": [
+				"oojs",
+				"oojs-ui"
+			],
+			"templates": {
+				"summary.mustache": "templates/summary.mustache",
+				"modules.mustache": "templates/modules.mustache",
+				"backendtime.mustache": "templates/backendtime.mustache",
+				"pagesize.mustache": "templates/pagesize.mustache"
+			},
+			"messages": [
+				"performanceinspector-dialog-title",
+				"performanceinspector-dialog-summary",
+				"performanceinspector-dialog-cancel",
+				"performanceinspector-modules-summary-top-list",
+				"performanceinspector-modules-summary-total-size",
+				"performanceinspector-modules-css-title",
+				"performanceinspector-modules-css-column-module",
+				"performanceinspector-modules-css-column-allselectors",
+				"performanceinspector-modules-css-column-matchedselectors",
+				"performanceinspector-modules-css-column-percentmatched",
+				"performanceinspector-modules-localstorage-title",
+				"performanceinspector-modules-localstorage-disabled",
+				"performanceinspector-modules-localstorage-hits",
+				"performanceinspector-modules-localstorage-misses",
+				"performanceinspector-modules-localstorage-expired",
+				"performanceinspector-modules-localstorage-totalsize",
+				"performanceinspector-backendtime-title",
+				"performanceinspector-backendtime-time-spent",
+				"performanceinspector-modules-name",
+				"performanceinspector-modules-label",
+				"performanceinspector-backendtime-name",
+				"performanceinspector-backendtime-label",
+				"performanceinspector-backendtime-summary-above-medium",
+				"performanceinspector-pagesize-name",
+				"performanceinspector-pagesize-label",
+				"performanceinspector-pagesize-missing-html-size",
+				"performanceinspector-pagesize-column-totalsize",
+				"performanceinspector-pagesize-column-imagesize",
+				"performanceinspector-pagesize-column-othersize"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "PerformanceInspector/modules"
+	},
+	"AutoloadClasses": {
+		"PerformanceInspectorHooks": "PerformanceInspector.hooks.php"
+	},
+	"manifest_version": 1
 }
