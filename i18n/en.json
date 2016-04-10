@@ -2,7 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
-	"performanceinspector-desc": "This extension shows you page performance metrics.",
+	"performanceinspector-desc": "Shows page performance metrics",
 	"performanceinspector-portlet-link": "Performance inspector",
 
 	"performanceinspector-dialog-title": "Performance inspector",

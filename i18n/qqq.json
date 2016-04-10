@@ -2,7 +2,7 @@
 	"@metadata": {
 		"authors": []
 	},
-	"performanceinspector-desc": "{{desc|name=PerformanceInspector|url=http://www.mediawiki.org/wiki/Extension:PerformanceInspector}}",
+	"performanceinspector-desc": "{{desc|name=PerformanceInspector|url=https://www.mediawiki.org/wiki/Extension:PerformanceInspector}}",
 	"performanceinspector-portlet-link": "The name of the link in the portlet menu, when the inspector is activated.",
 	"performanceinspector-dialog-title": "The heading in the dialog that displayes the inspector.",
 	"performanceinspector-dialog-summary": "The name of the summary field for all collected data for the inspector",
