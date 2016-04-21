@@ -1,8 +1,9 @@
-/*jshint undef:false */
 ( function ( mw, $ ) {
 	var $document = $( document );
 
 	$document.ready( function () {
+		var caPI,
+		caPILink;
 
 		function activatePI() {
 			// Lets inspect the current page first, to make sure the result isn't
@@ -25,18 +26,26 @@
 				).done( function () {
 					var views = [],
 						summary = {},
-						windowManager = new OO.ui.WindowManager();
+						windowManager = new OO.ui.WindowManager(),
+						promises = [],
+						piDialog;
 					// for each collector object collect summary and view data and
 					// pass it on to the dialog
 					mw.performanceInspector.collectors.forEach( function ( collector ) {
-						var data = collector();
-						if ( data.view ) {
-							views.push( data.view );
-							Object.keys( data.summary ).forEach( function ( summaryItem ) {
-								summary[ summaryItem ] = data.summary[ summaryItem ];
-							} );
-						}
+						promises.push( collector() );
 					} );
+					$.when( promises ).then( function ( result ) {
+						result.forEach( function ( resultFromCollector ) {
+							if ( resultFromCollector.view ) {
+								views.push( resultFromCollector.view );
+								// each result can have multiple summary items
+								Object.keys( resultFromCollector.summary ).forEach( function ( summaryItem ) {
+									summary[ summaryItem ] = resultFromCollector.summary[ summaryItem ];
+								} );
+							}
+						} );
+					} );
+
 					piDialog = new mw.performanceInspector.dialog.PiDialog( {
 							size: 'larger'
 						},
@@ -47,6 +56,7 @@
 					windowManager.addWindows( [ piDialog ] );
 					windowManager.openWindow( piDialog );
 				} );
+
 			} );
 		}
 
@@ -55,9 +65,9 @@
 			activatePI();
 		}
 
-		$caPI = $( '#t-performanceinspector' );
-		$caPILink = $caPI.find( 'a' );
-
-		$caPI.on( 'click', onPIClick );
+		caPI = $( '#t-performanceinspector' );
+		caPILink = caPI.find( 'a' );
+		caPI.on( 'click', onPIClick );
 	} );
+
 }( mediaWiki, jQuery ) );
