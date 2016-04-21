@@ -23,9 +23,9 @@
 			"scripts": [
 				"ext.PerformanceInspector.view.js",
 				"chartist/chartist.js",
-				"info/ext.PerformanceInspector.modules.js",
-				"info/ext.PerformanceInspector.backendtime.js",
-				"info/ext.PerformanceInspector.imagesize.js"
+				"collectors/ext.PerformanceInspector.modules.js",
+				"collectors/ext.PerformanceInspector.backendtime.js",
+				"collectors/ext.PerformanceInspector.imagesize.js"
 			],
 			"styles": [
 				"chartist/chartist.css",

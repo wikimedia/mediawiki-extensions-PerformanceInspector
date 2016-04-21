@@ -1,7 +1,7 @@
 /*jshint undef:false */
 ( function ( mw, $ ) {
 
-	var moduleMetrics = function generateModulesMetrics() {
+	var moduleCollector = function runModuleCollector() {
 
 		var totalSize = 0,
 			series = [],
@@ -90,6 +90,6 @@
 				} }
 		};
 	};
-	mw.performanceInspector.info.push( moduleMetrics );
+	mw.performanceInspector.collectors.push( moduleCollector );
 
 }( mediaWiki, jQuery ) );

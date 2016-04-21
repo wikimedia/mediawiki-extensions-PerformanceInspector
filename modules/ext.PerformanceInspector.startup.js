@@ -10,7 +10,7 @@
 			mw.loader.using( [ 'mediawiki.inspect' ] ).done( function () {
 
 				mw.performanceInspector = {};
-				mw.performanceInspector.info = [];
+				mw.performanceInspector.collectors = [];
 				// TODO this isn't correct because the second interaction
 				// it will pickup the Performance Inspectors metrics
 				mw.performanceInspector.inspect = {
@@ -26,10 +26,10 @@
 					var views = [],
 						summary = {},
 						windowManager = new OO.ui.WindowManager();
-					// for each info object collect summary and view data and
+					// for each collector object collect summary and view data and
 					// pass it on to the dialog
-					mw.performanceInspector.info.forEach( function ( info ) {
-						var data = info();
+					mw.performanceInspector.collectors.forEach( function ( collector ) {
+						var data = collector();
 						if ( data.view ) {
 							views.push( data.view );
 							Object.keys( data.summary ).forEach( function ( summaryItem ) {

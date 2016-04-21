@@ -2,7 +2,7 @@
 
 ( function ( mw, $ ) {
 
-	var imageSizeMetrics = function generateImageSize() {
+	var imageSizeCollector = function runImageSizeCollector() {
 		var warningLimit = 6000,
 			totalSize = 0,
 			warnings = 0,
@@ -68,5 +68,5 @@
 			return {};
 		}
 	};
-	mw.performanceInspector.info.push( imageSizeMetrics );
+	mw.performanceInspector.collectors.push( imageSizeCollector );
 }( mediaWiki, jQuery ) );

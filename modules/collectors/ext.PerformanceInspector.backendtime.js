@@ -4,7 +4,7 @@
 	This is an example of what the backend time could look like, it is not finished
 	*/
 	// the backend times variance alot depending where you are in the world
-	var backendMetrics = function generateBackendTime() {
+	var backendTimeCollector = function runBackendTimeCollector() {
 		var backendTime = window.performance.timing.responseStart - window.performance.timing.navigationStart,
 			limit = 300,
 			backendTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'backendtime.mustache' ),
@@ -28,6 +28,6 @@
 		};
 	};
 
-	mw.performanceInspector.info.push( backendMetrics );
+	mw.performanceInspector.collectors.push( backendTimeCollector );
 
 }( mediaWiki ) );
