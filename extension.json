@@ -8,7 +8,8 @@
 	"type": "other",
 	"Hooks": {
 		"BeforePageDisplay": [ "PerformanceInspectorHooks::onBeforePageDisplay" ],
-		"BaseTemplateToolbox": [ "PerformanceInspectorHooks::onBaseTemplateToolbox" ]
+		"BaseTemplateToolbox": [ "PerformanceInspectorHooks::onBaseTemplateToolbox" ],
+		"ResourceLoaderTestModules": ["PerformanceInspectorHooks::onResourceLoaderTestModules"]
 	},
 	"MessagesDirs": {
 		"BoilerPlate": [ "i18n" ]

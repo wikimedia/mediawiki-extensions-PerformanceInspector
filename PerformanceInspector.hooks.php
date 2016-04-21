@@ -26,4 +26,15 @@ class PerformanceInspectorHooks {
 			);
 		return true;
 	}
+
+	public static function onResourceLoaderTestModules( array &$testModules,
+		ResourceLoader &$resourceLoader ) {
+		$testModules['qunit']['ext.performanceInspector.tests'] = array(
+			'scripts' => array( 'tests/qunit/ext.performanceInspector.test.js' ),
+			'dependencies' => array( 'ext.PerformanceInspector.startup' ),
+			'localBasePath' => __DIR__,
+			'remoteExtPath' => 'PerformanceInspector'
+		);
+		return true;
+	}
 }
