@@ -33,11 +33,12 @@
 	"performanceinspector-backendtime-summary-above-medium": "The page took $1 {{PLURAL:$1| ms | ms }} to render in the backend.",
 	"performanceinspector-backendtime-time-spent": "The page took $1 {{PLURAL:$1| ms | ms }} to render in the backend.",
 
-	"performanceinspector-pagesize-name": "Page size",
-	"performanceinspector-pagesize-label": "Page size",
-	"performanceinspector-pagesize-missing-html-size": "Warning: We miss the size of the HTML in the total size.",
-	"performanceinspector-pagesize-column-totalsize": "Total",
-	"performanceinspector-pagesize-column-imagesize": "Image",
-	"performanceinspector-pagesize-column-othersize": "Others"
-
+	"performanceinspector-imagesize-name": "Image size",
+	"performanceinspector-imagesize-label": "Image size",
+	"performanceinspector-imagesize-column-image-name":"Name",
+	"performanceinspector-imagesize-column-size":"Size",
+	"performanceinspector-imagesize-column-image-extra":"Extra",
+	"performanceinspector-imagesize-too-big": "Warning",
+	"performanceinspector-imagesize-description":"Here are all the images loaded on this page.",
+	"performanceinspector-modules-summary-images":  "The page {{PLURAL:$1|has|have}} $1 {{PLURAL:$1|image|images}} with a total size of $2."
 }

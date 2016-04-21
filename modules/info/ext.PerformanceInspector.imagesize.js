@@ -2,17 +2,13 @@
 
 ( function ( mw, $ ) {
 
-	var pageSizeMetrics = function generatePageSize() {
-		var warningLimit = 4000,
-			noOfImages = 0,
-			tooBig = [],
+	var imageSizeMetrics = function generateImageSize() {
+		var warningLimit = 6000,
+			totalSize = 0,
+			warnings = 0,
+			images = [],
 			resources,
-			size = {
-				images: 0,
-				html: 0,
-				others: 0
-			},
-			pageSizeTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'pagesize.mustache' ),
+			imageSizeTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'imagesize.mustache' ),
 			isResourceTimingV2Supported = ( window.performance && window.performance.getEntriesByType( 'resource' ) && window.performance.getEntriesByType( 'resource' )[ 0 ].encodedBodySize );
 
 		function isImage( name ) {
@@ -40,38 +36,31 @@
 
 			for ( i = 0; i < resources.length; i++ ) {
 				if ( isImage( resources[ i ].name ) ) {
-					size.images = size.images + resources[ i ].encodedBodySize;
-					noOfImages++;
+					totalSize += resources[ i ].encodedBodySize;
 					if ( resources[ i ].encodedBodySize > warningLimit ) {
-						tooBig.push( {
-							name: resources[ i ].name.substring( resources[ i ].name.lastIndexOf( '/' ) + 1 ),
-							size: humanSize( resources[ i ].encodedBodySize )
-						} );
+						warnings++;
 					}
-				} else {
-					size.others = size.others + resources[ i ].encodedBodySize;
+					images.push( {
+						name: resources[ i ].name.substring( resources[ i ].name.lastIndexOf( '/' ) + 1 ),
+						url: resources[ i ].name,
+						size: humanSize( resources[ i ].encodedBodySize ),
+						warning:  resources[ i ].encodedBodySize > warningLimit ? true : false
+					} );
 				}
 			}
 
 			return {
 				summary: {
-					pageSize: humanSize( size.images + size.html + size.others )
+					imagesSummary: mw.msg( 'performanceinspector-modules-summary-images', images.length, humanSize( totalSize ), warnings )
 				},
 				view: {
-					name: 'performanceinspector-pagesize-name',
-					label: 'performanceinspector-pagesize-label',
-					template: pageSizeTemplate,
+					name: 'performanceinspector-imagesize-name',
+					label: 'performanceinspector-imagesize-label',
+					template: imageSizeTemplate,
 					data: {
-						size: {
-							images: humanSize( size.images ),
-							html: humanSize( size.html ),
-							others: humanSize( size.others )
-						},
+						totalImageSize: totalSize,
 						warningLimit: warningLimit,
-						totalSize: humanSize( size.images + size.html + size.others ),
-						tooBig: tooBig,
-						showToBig: tooBig.length > 0 ? true : false,
-						noOfImages: noOfImages
+						images: images
 					}
 				}
 			};
@@ -79,5 +68,5 @@
 			return {};
 		}
 	};
-	mw.performanceInspector.info.push( pageSizeMetrics );
+	mw.performanceInspector.info.push( imageSizeMetrics );
 }( mediaWiki, jQuery ) );

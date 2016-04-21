@@ -30,12 +30,12 @@
 	"performanceinspector-backendtime-label": "The label of the backend part of the dialog",
 	"performanceinspector-backendtime-summary-above-medium": "Text displayed when the backend time is larger than a predefined value.",
 	"performanceinspector-backendtime-time-spent": "Display the total time spent in backend in the dialog ",
-
-	"performanceinspector-pagesize-name": "The name of the page size of the dialog",
-	"performanceinspector-pagesize-label": "The label of the page size of the dialog",
-	"performanceinspector-pagesize-missing-html-size": "Warning text displayed aboy that we are missing the HTML size from the total size",
-	"performanceinspector-pagesize-column-totalsize": "Column name for the total size",
-	"performanceinspector-pagesize-column-imagesize": "Column name for image size",
-	"performanceinspector-pagesize-column-othersize": "Column name for all other assets except images"
-
+	"performanceinspector-imagesize-name": "The name of the page size of the dialog",
+	"performanceinspector-imagesize-label": "The label of the page size of the dialog",
+	"performanceinspector-imagesize-column-image-name":"Name of the column displaying the image name",
+	"performanceinspector-imagesize-column-size":"The name of the column displaying the size of the image",
+	"performanceinspector-imagesize-column-image-extra":"The name of the column displaying extra information about the images.",
+	"performanceinspector-imagesize-too-big": "Information displayed in the extra column if the image is too big.",
+	"performanceinspector-imagesize-description":"Description of the image section, displayed before the table of images.",
+	"performanceinspector-modules-summary-images":  "Information from the images displaying the summary information from the image objects."
 }

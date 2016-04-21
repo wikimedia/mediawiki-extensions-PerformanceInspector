@@ -25,7 +25,7 @@
 				"chartist/chartist.js",
 				"info/ext.PerformanceInspector.modules.js",
 				"info/ext.PerformanceInspector.backendtime.js",
-				"info/ext.PerformanceInspector.pagesize.js"
+				"info/ext.PerformanceInspector.imagesize.js"
 			],
 			"styles": [
 				"chartist/chartist.css",
@@ -39,7 +39,7 @@
 				"summary.mustache": "templates/summary.mustache",
 				"modules.mustache": "templates/modules.mustache",
 				"backendtime.mustache": "templates/backendtime.mustache",
-				"pagesize.mustache": "templates/pagesize.mustache"
+				"imagesize.mustache": "templates/imagesize.mustache"
 			},
 			"messages": [
 				"performanceinspector-dialog-title",
@@ -65,12 +65,14 @@
 				"performanceinspector-backendtime-name",
 				"performanceinspector-backendtime-label",
 				"performanceinspector-backendtime-summary-above-medium",
-				"performanceinspector-pagesize-name",
-				"performanceinspector-pagesize-label",
-				"performanceinspector-pagesize-missing-html-size",
-				"performanceinspector-pagesize-column-totalsize",
-				"performanceinspector-pagesize-column-imagesize",
-				"performanceinspector-pagesize-column-othersize"
+				"performanceinspector-imagesize-name",
+				"performanceinspector-imagesize-label",
+				"performanceinspector-imagesize-column-image-name",
+				"performanceinspector-imagesize-column-size",
+				"performanceinspector-imagesize-column-image-extra",
+				"performanceinspector-imagesize-too-big",
+				"performanceinspector-imagesize-description",
+				"performanceinspector-modules-summary-images"
 			]
 		}
 	},
