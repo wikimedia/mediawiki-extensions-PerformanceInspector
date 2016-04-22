@@ -36,5 +36,6 @@
 	"performanceinspector-imagesize-column-image-extra": "The name of the column displaying extra information about the images.\n{{Identical|Extra}}",
 	"performanceinspector-imagesize-too-big": "Information displayed in the extra column if the image is too big.\n{{Identical|Warning}}",
 	"performanceinspector-imagesize-description": "Description of the image section, displayed before the table of images.",
+	"performanceinspector-imagesize-warning-description": "Explain how the wanring system for images work: Images over 1 mb will be flagged as too big.",
 	"performanceinspector-modules-summary-images": "Information from the images displaying the summary information from the image objects."
 }

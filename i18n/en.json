@@ -35,10 +35,11 @@
 
 	"performanceinspector-imagesize-name": "Image size",
 	"performanceinspector-imagesize-label": "Image size",
-	"performanceinspector-imagesize-column-image-name":"Name",
-	"performanceinspector-imagesize-column-size":"Size",
-	"performanceinspector-imagesize-column-image-extra":"Extra",
+	"performanceinspector-imagesize-column-image-name": "Name",
+	"performanceinspector-imagesize-column-size": "Size",
+	"performanceinspector-imagesize-column-image-extra": "Extra",
 	"performanceinspector-imagesize-too-big": "Warning",
-	"performanceinspector-imagesize-description":"Here are all the images loaded on this page.",
-	"performanceinspector-modules-summary-images":  "The page {{PLURAL:$1|has|have}} $1 {{PLURAL:$1|image|images}} with a total size of $2."
+	"performanceinspector-imagesize-description": "Here are all the images loaded on this page.",
+	"performanceinspector-imagesize-warning-description": "Images that are too big will be flagged with a warning. You should try to make the images smaller by compressing them and make sure they have the right DPI.",
+	"performanceinspector-modules-summary-images": "The page {{PLURAL:$1|has|have}} $1 {{PLURAL:$1|image|images}} with a total size of $2."
 }

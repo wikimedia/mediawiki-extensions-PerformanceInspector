@@ -1,18 +1,18 @@
 {
 	"name": "PerformanceInspector",
 	"version": "0.1.0",
-	"author": [ "Peter Hedenskog" ],
+	"author": ["Peter Hedenskog"],
 	"url": "https://www.mediawiki.org/wiki/Extension:PerformanceInspector",
 	"descriptionmsg": "performanceinspector-desc",
 	"license-name": "GPL-2.0+",
 	"type": "other",
 	"Hooks": {
-		"BeforePageDisplay": [ "PerformanceInspectorHooks::onBeforePageDisplay" ],
-		"BaseTemplateToolbox": [ "PerformanceInspectorHooks::onBaseTemplateToolbox" ],
+		"BeforePageDisplay": ["PerformanceInspectorHooks::onBeforePageDisplay"],
+		"BaseTemplateToolbox": ["PerformanceInspectorHooks::onBaseTemplateToolbox"],
 		"ResourceLoaderTestModules": ["PerformanceInspectorHooks::onResourceLoaderTestModules"]
 	},
 	"MessagesDirs": {
-		"BoilerPlate": [ "i18n" ]
+		"BoilerPlate": ["i18n"]
 	},
 	"ResourceModules": {
 		"ext.PerformanceInspector.startup": {
@@ -71,6 +71,7 @@
 				"performanceinspector-imagesize-column-image-extra",
 				"performanceinspector-imagesize-too-big",
 				"performanceinspector-imagesize-description",
+				"performanceinspector-imagesize-warning-description",
 				"performanceinspector-modules-summary-images"
 			]
 		}
