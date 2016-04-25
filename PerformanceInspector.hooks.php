@@ -31,7 +31,7 @@ class PerformanceInspectorHooks {
 		ResourceLoader &$resourceLoader ) {
 		$testModules['qunit']['ext.performanceInspector.tests'] = array(
 			'scripts' => array( 'tests/qunit/ext.performanceInspector.test.js' ),
-			'dependencies' => array( 'ext.PerformanceInspector.startup' ),
+			'dependencies' => array( 'ext.PerformanceInspector.analyze' ),
 			'localBasePath' => __DIR__,
 			'remoteExtPath' => 'PerformanceInspector'
 		);
