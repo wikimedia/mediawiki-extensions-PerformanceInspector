@@ -1,4 +1,3 @@
-/*jshint undef:false */
 ( function ( mw ) {
 	/**
 	This is an example of what the backend time could look like, it is not finished
@@ -22,12 +21,11 @@
 				label: 'performanceinspector-backendtime-label',
 				template: backendTemplate,
 				data: {
-					backendTime:  mw.msg( 'performanceinspector-backendtime-time-spent', backendTime )
+					backendTime: mw.msg( 'performanceinspector-backendtime-time-spent', backendTime )
 				}
 			}
 		};
 	};
 
-	mw.performanceInspector.collectors.push( backendTimeCollector );
-
+	module.exports.collectors.push( backendTimeCollector );
 }( mediaWiki ) );

@@ -19,6 +19,9 @@
 
 	"globals": {
 		"mediaWiki": false,
-		"OO": false
+		"OO": false,
+		"require": false,
+		"module": false,
+		"Chartist": false
 	}
 }

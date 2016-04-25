@@ -1,59 +1,60 @@
 ( function ( mw, $ ) {
-	var $document = $( document );
+	var $document = $( document ),
+		inspectData;
 
 	$document.ready( function () {
 		var caPI,
-		caPILink;
+			caPILink;
 
 		function activatePI() {
 			// Lets inspect the current page first, to make sure the result isn't
 			// polluted by the modules in the performance inspector
-			mw.loader.using( [ 'mediawiki.inspect' ] ).done( function () {
+			if ( !inspectData ) {
+				inspectData = mw.loader.using( [ 'mediawiki.inspect' ] ).then( function () {
+					return {
+						// we want the largest module first
+						modules: mw.inspect.reports.size().reverse(),
+						css: mw.inspect.reports.css(),
+						store: mw.inspect.reports.store()
+					};
+				} );
+			}
 
-				mw.performanceInspector = {};
-				mw.performanceInspector.collectors = [];
-				// TODO this isn't correct because the second interaction
-				// it will pickup the Performance Inspectors metrics
-				mw.performanceInspector.inspect = {
-					modules: mw.inspect.reports.size(),
-					css: mw.inspect.reports.css(),
-					store: mw.inspect.reports.store()
-				};
-
+			inspectData.then( function ( moduleData ) {
 				$.when(
 					mw.loader.using( [ 'ext.PerformanceInspector.analyze' ] ),
 					$.ready
 				).done( function () {
-					var views = [],
+					var collectors = mw.loader.require( 'ext.PerformanceInspector.analyze' ).collectors,
+						views = [],
 						summary = {},
 						windowManager = new OO.ui.WindowManager(),
-						promises = [],
-						piDialog;
+						dialog,
+						PiDialog = mw.loader.require( 'ext.PerformanceInspector.analyze' ).PiDialog;
+
 					// for each collector object collect summary and view data and
 					// pass it on to the dialog
-					mw.performanceInspector.collectors.forEach( function ( collector ) {
-						promises.push( collector() );
-					} );
-					// instead of Promise.all, is there a better way of doing it with JQuery?
-					$.when.apply( $, promises ).done( function ( ) {
-						$.makeArray( arguments ).forEach( function ( resultFromCollector ) {
-							if ( resultFromCollector.view ) {
-								views.push( resultFromCollector.view );
-								// each result can have multiple summary items
-								Object.keys( resultFromCollector.summary ).forEach( function ( summaryItem ) {
-									summary[ summaryItem ] = resultFromCollector.summary[ summaryItem ];
-								} );
-							}
+					collectors.forEach( function ( collector ) {
+						var data = collector( {
+							inspect: moduleData
 						} );
-						piDialog = new mw.performanceInspector.dialog.PiDialog( {
-								size: 'larger'
-							},
-							summary,
-							views );
-						$( 'body' ).append( windowManager.$element );
-						windowManager.addWindows( [ piDialog ] );
-						windowManager.openWindow( piDialog );
+						if ( data.view ) {
+							views.push( data.view );
+							Object.keys( data.summary ).forEach( function ( summaryItem ) {
+								summary[ summaryItem ] = data.summary[ summaryItem ];
+							} );
+						}
 					} );
+
+					dialog = new PiDialog( {
+							size: 'larger'
+						},
+						summary,
+						views );
+
+					$( 'body' ).append( windowManager.$element );
+					windowManager.addWindows( [ dialog ] );
+					windowManager.openWindow( dialog );
 				} );
 			} );
 		}

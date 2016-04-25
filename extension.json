@@ -21,6 +21,7 @@
 		},
 		"ext.PerformanceInspector.analyze": {
 			"scripts": [
+				"ext.PerformanceInspector.setup.js",
 				"ext.PerformanceInspector.view.js",
 				"chartist/chartist.js",
 				"collectors/ext.PerformanceInspector.modules.js",

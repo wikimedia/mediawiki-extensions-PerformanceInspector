@@ -111,7 +111,6 @@
 			}, this );
 	};
 
-	mw.performanceInspector.dialog = {};
-	mw.performanceInspector.dialog.PiDialog = PerformanceDialog;
+	module.exports.PiDialog = PerformanceDialog;
 
 }( mediaWiki, jQuery ) );

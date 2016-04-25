@@ -44,7 +44,7 @@
 						name: resources[ i ].name.substring( resources[ i ].name.lastIndexOf( '/' ) + 1 ),
 						url: resources[ i ].name,
 						size: humanSize( resources[ i ].encodedBodySize ),
-						warning:  resources[ i ].encodedBodySize > warningLimit ? true : false
+						warning: resources[ i ].encodedBodySize > warningLimit ? true : false
 					} );
 				}
 			}
@@ -68,5 +68,5 @@
 			return {};
 		}
 	};
-	mw.performanceInspector.collectors.push( imageSizeCollector );
+	module.exports.collectors.push( imageSizeCollector );
 }( mediaWiki, jQuery ) );
