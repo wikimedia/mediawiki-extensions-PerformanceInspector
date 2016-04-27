@@ -34,8 +34,9 @@
 					mw.performanceInspector.collectors.forEach( function ( collector ) {
 						promises.push( collector() );
 					} );
-					$.when( promises ).then( function ( result ) {
-						result.forEach( function ( resultFromCollector ) {
+					// instead of Promise.all, is there a better way of doing it with JQuery?
+					$.when.apply( $, promises ).done( function ( ) {
+						$.makeArray( arguments ).forEach( function ( resultFromCollector ) {
 							if ( resultFromCollector.view ) {
 								views.push( resultFromCollector.view );
 								// each result can have multiple summary items
@@ -44,19 +45,16 @@
 								} );
 							}
 						} );
+						piDialog = new mw.performanceInspector.dialog.PiDialog( {
+								size: 'larger'
+							},
+							summary,
+							views );
+						$( 'body' ).append( windowManager.$element );
+						windowManager.addWindows( [ piDialog ] );
+						windowManager.openWindow( piDialog );
 					} );
-
-					piDialog = new mw.performanceInspector.dialog.PiDialog( {
-							size: 'larger'
-						},
-						summary,
-						views );
-
-					$( 'body' ).append( windowManager.$element );
-					windowManager.addWindows( [ piDialog ] );
-					windowManager.openWindow( piDialog );
 				} );
-
 			} );
 		}
 
