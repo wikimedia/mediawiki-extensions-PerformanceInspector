@@ -2,8 +2,7 @@
 
 	var moduleCollector = function runModuleCollector( data ) {
 		var totalSize = 0,
-			series = [],
-			labels = [],
+			barMetrics = [],
 			topThree = data.inspect.modules.slice( data.inspect.modules.length - 3, data.inspect.modules.length ).reverse(),
 			modulesTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'modules.mustache' );
 
@@ -22,43 +21,21 @@
 			return bytes.toFixed( i > 0 ? 1 : 0 ) + units[ i ];
 		}
 
-		/**
-		 * We use Chartist-js for the horizontal bars
-		 * displaying the size of modules.
-		 * https://gionkunz.github.io/chartist-js/
-		 */
-		function drawTheChart( labels, series ) {
-			var chartDiv = $( '<div/>' );
-
-			/*jshint nonew: false */
-			new Chartist.Bar( chartDiv[ 0 ], {
-				labels: labels,
-				series: [ series ]
-			}, {
-				seriesBarDistance: 0,
-				horizontalBars: true,
-				height: labels.length * 30,
-				width: 600,
-				labelOffset: 20,
-				axisY: {
-					offset: 200
-				}
-			} );
-
-			return chartDiv;
-		}
-
-		data.inspect.modules.forEach( function ( module ) {
+		// Add the data needed for generating the bar chart
+		data.inspect.modules.reverse().forEach( function ( module ) {
 			if ( module.sizeInBytes !== null ) {
+				barMetrics.push( {
+					name: module.name,
+					size: module.size,
+					sizeInBytes: module.sizeInBytes
+				} );
 				totalSize += module.sizeInBytes;
-				series.push( module.sizeInBytes );
-				labels.push( module.name + ' (' + module.size + ')' );
 			}
 		} );
 
-		function postProcess( html, result ) {
-			var chart = html.siblings( '#moduleChart' );
-			chart.append( result.moduleChart );
+		function postProcess( html ) {
+			var generate = mw.loader.require( 'ext.PerformanceInspector.analyze' ).barChart;
+			generate( html, '.bar' );
 		}
 		return {
 			summary: {
@@ -69,12 +46,12 @@
 				name: 'performanceinspector-modules-name',
 				label: 'performanceinspector-modules-label',
 				template: modulesTemplate,
-				moduleChart: drawTheChart( labels, series ),
 				postProcess: postProcess,
 				data: {
 					modules: data.inspect.modules,
 					store: data.inspect.store,
-					css: data.inspect.css
+					css: data.inspect.css,
+					series: barMetrics
 				}
 			}
 		};

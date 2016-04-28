@@ -23,13 +23,12 @@
 			"scripts": [
 				"ext.PerformanceInspector.setup.js",
 				"ext.PerformanceInspector.view.js",
-				"chartist/chartist.js",
+				"util/barChart.js",
 				"collectors/ext.PerformanceInspector.modules.js",
 				"collectors/ext.PerformanceInspector.backendtime.js",
 				"collectors/ext.PerformanceInspector.imagesize.js"
 			],
 			"styles": [
-				"chartist/chartist.css",
 				"css/ext.PerformanceInspector.css"
 			],
 			"dependencies": [

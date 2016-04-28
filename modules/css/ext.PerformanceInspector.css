@@ -1,10 +1,53 @@
-.ct-series-a .ct-bar {
-  /* Colour of your bars */
-  stroke: #006496;
-  /* The width of your bars */
-  stroke-width: 20px;
+
+/** The bar chart */
+.barchart {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+}
+.barchart .row {
+  position: relative;
+  height: 26px;
+  margin-bottom: 2px;
+}
+.barchart .barWrap {
+  position: relative;
+  background: #d0d0d0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.barchart .barWrap .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #006496;
+
 }
 
-.ct-label {
-  color: black;
+.barchart .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: bold;
+  z-index: 10;
+}
+.barchart .value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: right;
+  z-index: 10;
 }

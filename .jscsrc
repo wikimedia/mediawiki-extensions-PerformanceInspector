@@ -1,5 +1,4 @@
 {
 	"preset": "wikimedia",
-	"es3": true,
-	"excludeFiles": [ "modules/chartist/**" ]
+	"es3": true
 }

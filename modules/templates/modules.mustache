@@ -1,8 +1,19 @@
-<!-- Module size info -->
+{{! Module size info  }}
+	<div class="barchart">
+	  <div id="moduleBarChart">
+			{{#series}}
+	    <div class="row">
+	      <span class="label">{{name}}</span>
+	      <div class="barWrap">
+	        <div class="bar" data-value="{{sizeInBytes}}"></div>
+	      </div>
+	      <span class="value">{{size}}</span>
+	    </div>
+			{{/series}}
+	  </div>
+	</div>
 
-<div id='moduleChart'></div>
-
-<!-- CSS info -->
+{{! CSS info  }}
 <h4>{{#msg}}performanceinspector-modules-css-title{{/msg}}</h4>
 <table class="wikitable">
 	<thead>
@@ -39,7 +50,7 @@
 	{{/css}}
 </table>
 
-<!-- Local storage info -->
+{{! Local storage info  }}
 <h4>{{#msg}}performanceinspector-modules-localstorage-title{{/msg}}</h4>
 {{#store.enabled}}
 <ul>

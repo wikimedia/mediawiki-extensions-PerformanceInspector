@@ -75,7 +75,7 @@
 			// if the info has some post processing to be done on the HTML
 			// lets do it (= inject graphs)
 			if ( result.postProcess ) {
-				result.postProcess( $parsedHTML, result );
+				result.postProcess( $parsedHTML );
 			}
 
 			self.pages.push( new PerformanceInspectorResult( mw.msg( result.name ), {
