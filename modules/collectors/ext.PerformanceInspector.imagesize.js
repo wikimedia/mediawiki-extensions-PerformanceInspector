@@ -9,7 +9,7 @@
 			images = [],
 			resources,
 			imageSizeTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'imagesize.mustache' ),
-			isResourceTimingV2Supported = ( window.performance && window.performance.getEntriesByType( 'resource' ) && window.performance.getEntriesByType( 'resource' )[ 0 ].encodedBodySize );
+			isResourceTimingV2Supported = ( window.performance && window.performance.getEntriesByType && window.performance.getEntriesByType( 'resource' ) && window.performance.getEntriesByType( 'resource' )[ 0 ].encodedBodySize );
 
 		function isImage( name ) {
 			return ( name.match( /\.(jpeg|jpg|gif|png)$/i ) !== null );
