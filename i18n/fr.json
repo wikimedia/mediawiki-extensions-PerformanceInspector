@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gomoko",
+			"Wladek92"
+		]
+	},
+	"performanceinspector-desc": "Affiche la page des métriques de performance",
+	"performanceinspector-portlet-link": "Inspecteur de performance",
+	"performanceinspector-dialog-title": "Inspecteur de performance",
+	"performanceinspector-dialog-summary": "Résumé",
+	"performanceinspector-dialog-cancel": "Annuler",
+	"performanceinspector-modules-summary-top-list": "Les trois principaux plus grands modules",
+	"performanceinspector-modules-summary-total-size": "La taille totale de tous les modules",
+	"performanceinspector-modules-name": "Modules",
+	"performanceinspector-modules-label": "Information sur les modules",
+	"performanceinspector-modules-css-title": "CSS",
+	"performanceinspector-modules-css-column-module": "Module",
+	"performanceinspector-modules-css-column-allselectors": "tousSélecteurs",
+	"performanceinspector-modules-css-column-matchedselectors": "sélecteursCorrespondants",
+	"performanceinspector-modules-css-column-percentmatched": "pourcentageCorrespondant",
+	"performanceinspector-modules-localstorage-title": "Stockage local",
+	"performanceinspector-modules-localstorage-disabled": "Le stockage local est désactivé.",
+	"performanceinspector-modules-localstorage-hits": "Correspondances",
+	"performanceinspector-modules-localstorage-misses": "Non correspondances",
+	"performanceinspector-modules-localstorage-expired": "Expiré",
+	"performanceinspector-modules-localstorage-totalsize": "Taille totale",
+	"performanceinspector-backendtime-name": "Heure du serveur",
+	"performanceinspector-backendtime-label": "Heure du serveur",
+	"performanceinspector-backendtime-summary-above-medium": "Il a  fallu $1 {{PLURAL:$1| ms }} pour rendre la page sur le serveur.",
+	"performanceinspector-backendtime-time-spent": " Il a  fallu $1 {{PLURAL:$1| ms }} pour rendre la page sur le serveur.",
+	"performanceinspector-imagesize-name": "Taille de l’image",
+	"performanceinspector-imagesize-label": "Taille de l’image",
+	"performanceinspector-imagesize-column-image-name": "Nom",
+	"performanceinspector-imagesize-column-size": "Taille",
+	"performanceinspector-imagesize-column-image-extra": "Extra",
+	"performanceinspector-imagesize-too-big": "Avertissement",
+	"performanceinspector-imagesize-description": "Voici toutes les images chargées sur cette page.",
+	"performanceinspector-modules-summary-images": "La page a $1 {{PLURAL:$1|image|images}} pour une taille totale de $2."
+}

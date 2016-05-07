@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"performanceinspector-desc": "Ermöglicht die Anzeige von Metriken zur Seitenleistung",
+	"performanceinspector-portlet-link": "Leistungsinspektor",
+	"performanceinspector-dialog-title": "Leistungsinspektor",
+	"performanceinspector-dialog-summary": "Zusammenfassung",
+	"performanceinspector-dialog-cancel": "Abbrechen",
+	"performanceinspector-modules-summary-top-list": "Die drei größten Module",
+	"performanceinspector-modules-summary-total-size": "Die Gesamtgröße aller Module",
+	"performanceinspector-modules-name": "Module",
+	"performanceinspector-modules-label": "Modulinformationen",
+	"performanceinspector-modules-css-title": "CSS",
+	"performanceinspector-modules-css-column-module": "Modul",
+	"performanceinspector-modules-css-column-allselectors": "allSelectors",
+	"performanceinspector-modules-css-column-matchedselectors": "matchedselectors",
+	"performanceinspector-modules-css-column-percentmatched": "percentMatched",
+	"performanceinspector-modules-localstorage-title": "Lokaler Speicher",
+	"performanceinspector-modules-localstorage-disabled": "Der lokale Speicher ist deaktiviert.",
+	"performanceinspector-modules-localstorage-hits": "Treffer",
+	"performanceinspector-modules-localstorage-misses": "Fehlt",
+	"performanceinspector-modules-localstorage-expired": "Abgelaufen",
+	"performanceinspector-modules-localstorage-totalsize": "Gesamtgröße",
+	"performanceinspector-backendtime-name": "Backend-Zeit",
+	"performanceinspector-backendtime-label": "Backend-Zeit",
+	"performanceinspector-backendtime-summary-above-medium": "Die Seite benötigt zur Darstellung im Backend {{PLURAL:$1|eine|$1}} ms.",
+	"performanceinspector-backendtime-time-spent": "Die Seite benötigt zur Darstellung im Backend {{PLURAL:$1|eine|$1}} ms.",
+	"performanceinspector-imagesize-name": "Bildgröße",
+	"performanceinspector-imagesize-label": "Bildgröße",
+	"performanceinspector-imagesize-column-image-name": "Name",
+	"performanceinspector-imagesize-column-size": "Größe",
+	"performanceinspector-imagesize-column-image-extra": "Zusatz",
+	"performanceinspector-imagesize-too-big": "Warnung",
+	"performanceinspector-imagesize-description": "Hier sind alle Bilder, die auf dieser Seite geladen sind.",
+	"performanceinspector-modules-summary-images": "Die Seite hat {{PLURAL:$1|ein Bild|$1 Bilder}} mit einer Gesamtgröße von $2."
+}

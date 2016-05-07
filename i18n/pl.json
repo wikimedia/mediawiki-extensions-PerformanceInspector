@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"performanceinspector-portlet-link": "Inspektor wydajności",
+	"performanceinspector-dialog-title": "Inspektor wydajności",
+	"performanceinspector-dialog-summary": "Podsumowanie",
+	"performanceinspector-dialog-cancel": "Anuluj",
+	"performanceinspector-modules-summary-top-list": "Trzy największe moduły",
+	"performanceinspector-modules-summary-total-size": "Całkowity rozmiar wszystkich modułów",
+	"performanceinspector-modules-name": "Moduły",
+	"performanceinspector-modules-label": "Informacje o modułach",
+	"performanceinspector-modules-css-title": "CSS",
+	"performanceinspector-modules-css-column-module": "Moduł",
+	"performanceinspector-imagesize-name": "Rozmiar obrazka",
+	"performanceinspector-imagesize-label": "Rozmiar obrazka",
+	"performanceinspector-imagesize-column-image-name": "Nazwa",
+	"performanceinspector-imagesize-column-size": "Rozmiar",
+	"performanceinspector-imagesize-too-big": "Ostrzeżenie",
+	"performanceinspector-imagesize-description": "Oto wszystkie obrazki ładowane na tej stronie."
+}

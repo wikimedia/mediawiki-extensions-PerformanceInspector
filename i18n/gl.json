@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm"
+		]
+	},
+	"performanceinspector-desc": "Mostra a páxina das métricas de rendemento",
+	"performanceinspector-portlet-link": "Inspector de rendemento",
+	"performanceinspector-dialog-title": "Inspector de rendemento",
+	"performanceinspector-dialog-summary": "Resumo",
+	"performanceinspector-dialog-cancel": "Cancelar",
+	"performanceinspector-modules-summary-top-list": "Os tres principais módulos máis grandes",
+	"performanceinspector-modules-summary-total-size": "O tamaño total de todos os módulos",
+	"performanceinspector-modules-name": "Módulos",
+	"performanceinspector-modules-label": "Información dos módulos",
+	"performanceinspector-modules-css-title": "CSS",
+	"performanceinspector-modules-css-column-module": "Módulo",
+	"performanceinspector-modules-css-column-allselectors": "todosSelectores",
+	"performanceinspector-modules-css-column-matchedselectors": "selectoresCorrespondentes",
+	"performanceinspector-modules-css-column-percentmatched": "porcentaxeCorrespondente",
+	"performanceinspector-modules-localstorage-title": "Almacenamento local",
+	"performanceinspector-modules-localstorage-disabled": "O almacenamento local está desactivado.",
+	"performanceinspector-modules-localstorage-hits": "Correspondencias",
+	"performanceinspector-modules-localstorage-misses": "Non correspondencias",
+	"performanceinspector-modules-localstorage-expired": "Caducado",
+	"performanceinspector-modules-localstorage-totalsize": "Tamaño total",
+	"performanceinspector-backendtime-name": "Hora do servidor",
+	"performanceinspector-backendtime-label": "Hora do servidor",
+	"performanceinspector-backendtime-summary-above-medium": "Levou $1 {{PLURAL:$1| ms | ms}} xerar a páxina no servidor.",
+	"performanceinspector-backendtime-time-spent": "Levou $1 {{PLURAL:$1| ms | ms}} xerar a páxina no servidor.",
+	"performanceinspector-imagesize-name": "Tamaño da imaxe",
+	"performanceinspector-imagesize-label": "Tamaño da imaxe",
+	"performanceinspector-imagesize-column-image-name": "Nome",
+	"performanceinspector-imagesize-column-size": "Tamaño",
+	"performanceinspector-imagesize-column-image-extra": "Extra",
+	"performanceinspector-imagesize-too-big": "Aviso",
+	"performanceinspector-imagesize-description": "Aquí están todas as imaxes cargadas nesta páxina.",
+	"performanceinspector-modules-summary-images": "A páxina {{PLURAL:$1|ten}} $1 {{PLURAL:$1|imaxe|imaxes}} cun tamaño total de $2."
+}

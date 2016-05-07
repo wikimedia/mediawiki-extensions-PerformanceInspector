@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Guycn2"
+		]
+	},
+	"performanceinspector-dialog-summary": "תקציר",
+	"performanceinspector-dialog-cancel": "ביטול",
+	"performanceinspector-modules-css-title": "CSS",
+	"performanceinspector-modules-localstorage-title": "אחסון מקומי",
+	"performanceinspector-modules-localstorage-disabled": "האחסון המקומי מבוטל.",
+	"performanceinspector-modules-localstorage-expired": "פקעו",
+	"performanceinspector-modules-localstorage-totalsize": "גודל כולל",
+	"performanceinspector-imagesize-name": "גודל התמונה",
+	"performanceinspector-imagesize-label": "גודל התמונה",
+	"performanceinspector-imagesize-column-image-name": "שם",
+	"performanceinspector-imagesize-column-size": "גודל",
+	"performanceinspector-imagesize-column-image-extra": "מידע נוסף",
+	"performanceinspector-imagesize-too-big": "אזהרה",
+	"performanceinspector-imagesize-description": "להלן רשימה של כל התמונות בדף הזה.",
+	"performanceinspector-modules-summary-images": "בדף יש {{PLURAL:$1|תמונה אחת שגודלה|$1 תמונות שגודלן הכולל}} הוא $2."
+}

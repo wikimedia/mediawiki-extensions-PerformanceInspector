@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Maroen1990"
+		]
+	},
+	"performanceinspector-imagesize-name": "حجم الصورة",
+	"performanceinspector-imagesize-label": "حجم الصورة",
+	"performanceinspector-imagesize-column-image-name": "الاسم",
+	"performanceinspector-imagesize-column-size": "الحجم",
+	"performanceinspector-imagesize-too-big": "تحذير"
+}
