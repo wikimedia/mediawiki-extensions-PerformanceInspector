@@ -58,7 +58,6 @@
 				"performanceinspector-modules-localstorage-misses",
 				"performanceinspector-modules-localstorage-expired",
 				"performanceinspector-modules-localstorage-totalsize",
-				"performanceinspector-backendtime-title",
 				"performanceinspector-backendtime-time-spent",
 				"performanceinspector-modules-name",
 				"performanceinspector-modules-label",
