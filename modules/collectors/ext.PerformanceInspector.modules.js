@@ -3,7 +3,7 @@
 	var moduleCollector = function runModuleCollector( data ) {
 		var totalSize = 0,
 			barMetrics = [],
-			topThree = data.inspect.modules.slice( data.inspect.modules.length - 3, data.inspect.modules.length ).reverse(),
+			topThree = data.inspect.modules.slice( 0, 3 ),
 			modulesTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'modules.mustache' );
 
 		function humanSize( bytes ) {
@@ -22,7 +22,7 @@
 		}
 
 		// Add the data needed for generating the bar chart
-		data.inspect.modules.reverse().forEach( function ( module ) {
+		data.inspect.modules.forEach( function ( module ) {
 			if ( module.sizeInBytes !== null ) {
 				barMetrics.push( {
 					name: module.name,
