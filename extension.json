@@ -1,18 +1,18 @@
 {
 	"name": "PerformanceInspector",
 	"version": "0.1.0",
-	"author": ["Peter Hedenskog"],
+	"author": [ "Peter Hedenskog" ],
 	"url": "https://www.mediawiki.org/wiki/Extension:PerformanceInspector",
 	"descriptionmsg": "performanceinspector-desc",
 	"license-name": "GPL-2.0+",
 	"type": "other",
 	"Hooks": {
-		"BeforePageDisplay": ["PerformanceInspectorHooks::onBeforePageDisplay"],
-		"BaseTemplateToolbox": ["PerformanceInspectorHooks::onBaseTemplateToolbox"],
-		"ResourceLoaderTestModules": ["PerformanceInspectorHooks::onResourceLoaderTestModules"]
+		"BeforePageDisplay": [ "PerformanceInspectorHooks::onBeforePageDisplay" ],
+		"BaseTemplateToolbox": [ "PerformanceInspectorHooks::onBaseTemplateToolbox" ],
+		"ResourceLoaderTestModules": [ "PerformanceInspectorHooks::onResourceLoaderTestModules" ]
 	},
 	"MessagesDirs": {
-		"BoilerPlate": ["i18n"]
+		"BoilerPlate": [ "i18n" ]
 	},
 	"ResourceModules": {
 		"ext.PerformanceInspector.startup": {
@@ -25,7 +25,8 @@
 				"ext.PerformanceInspector.view.js",
 				"util/barChart.js",
 				"collectors/ext.PerformanceInspector.modules.js",
-				"collectors/ext.PerformanceInspector.imagesize.js"
+				"collectors/ext.PerformanceInspector.imagesize.js",
+				"collectors/ext.PerformanceInspector.newpp.js"
 			],
 			"styles": [
 				"css/ext.PerformanceInspector.css"
@@ -37,7 +38,8 @@
 			"templates": {
 				"summary.mustache": "templates/summary.mustache",
 				"modules.mustache": "templates/modules.mustache",
-				"imagesize.mustache": "templates/imagesize.mustache"
+				"imagesize.mustache": "templates/imagesize.mustache",
+				"newpp.mustache": "templates/newpp.mustache"
 			},
 			"messages": [
 				"performanceinspector-dialog-title",
@@ -66,7 +68,33 @@
 				"performanceinspector-imagesize-too-big",
 				"performanceinspector-imagesize-description",
 				"performanceinspector-imagesize-warning-description",
-				"performanceinspector-modules-summary-images"
+				"performanceinspector-modules-summary-images",
+				"performanceinspector-newpp-summary",
+				"performanceinspector-newpp-label",
+				"performanceinspector-newpp-column-name",
+				"performanceinspector-newpp-column-value",
+				"performanceinspector-newpp-column-limit",
+				"performanceinspector-newpp-template-time-report-column-name",
+				"performanceinspector-newpp-template-time-report-column-percentreal",
+				"performanceinspector-newpp-template-time-report-column-real",
+				"performanceinspector-newpp-template-time-report-column-calls",
+				"performanceinspector-newpp-cputime",
+				"performanceinspector-newpp-walltime",
+				"performanceinspector-newpp-ppvisitednodes",
+				"performanceinspector-newpp-ppgeneratednodes",
+				"performanceinspector-newpp-postexpandincludesize",
+				"performanceinspector-newpp-templateargumentsize",
+				"performanceinspector-newpp-expansiondepth",
+				"performanceinspector-newpp-expensivefunctioncount",
+				"performanceinspector-newpp-timingprofile",
+				"performanceinspector-newpp-name",
+				"performanceinspector-newpp-scribunto",
+				"performanceinspector-newpp-parsed-by",
+				"performanceinspector-newpp-cached-time",
+				"performanceinspector-newpp-parsed-ttl",
+				"performanceinspector-newpp-dynamic-content",
+				"performanceinspector-newpp-cachereport",
+				"performanceinspector-newpp-value-and-limit"
 			]
 		}
 	},

@@ -27,6 +27,65 @@
 						}
 					};
 
+				mw.config.set( 'wgPageParseReport', { limitreport: {
+					cputime: '4.255',
+					walltime: '4.769',
+					ppvisitednodes: {
+							value: 37554,
+							limit: 1000000
+						},
+					ppgeneratednodes: {
+							value: 0,
+							limit: 1500000
+						},
+					postexpandincludesize: {
+							value: 1610819,
+							limit: 2097152
+						},
+					templateargumentsize: {
+							value: 206426,
+							limit: 2097152
+						},
+					expansiondepth: {
+							value: 17,
+							limit: 40
+						},
+					expensivefunctioncount: {
+							value: 20,
+							limit: 500
+						},
+					timingprofile: [
+							'100.00% 3961.870      1 -total',
+							' 63.94% 2533.225      1 Template:Reflist',
+							' 35.17% 1393.228    363 Template:Cite_news',
+							' 12.99%  514.694    140 Template:Cite_web',
+							'  7.98%  316.089      2 Template:Navboxes',
+							'  7.68%  304.127      1 Template:Infobox_president',
+							'  7.26%  287.584      7 Template:Infobox',
+							'  7.03%  278.476     18 Template:Navbox',
+							'  3.08%  122.189     17 Template:Infobox_officeholder/office',
+							'  2.60%  103.177     50 Template:Flagicon'
+					]
+				},
+					scribunto: {
+									'limitreport-timeusage': {
+													value: '2.255',
+													limit: '10.000'
+												},
+									'limitreport-memusage': {
+													value: 10231838,
+													limit: 52428800
+												}
+								},
+					EntityAccessCount: 1,
+					cachereport: {
+									origin: 'mw1248',
+									timestamp: '20160811033932',
+									ttl: 3600,
+									transientcontent: true
+								}
+				} );
+
 				assert.ok( collectors.length > 0, 'We should pick up the collectors' );
 
 				collectors.forEach( function ( collector ) {
