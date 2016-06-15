@@ -25,7 +25,6 @@
 				"ext.PerformanceInspector.view.js",
 				"util/barChart.js",
 				"collectors/ext.PerformanceInspector.modules.js",
-				"collectors/ext.PerformanceInspector.backendtime.js",
 				"collectors/ext.PerformanceInspector.imagesize.js"
 			],
 			"styles": [
@@ -38,7 +37,6 @@
 			"templates": {
 				"summary.mustache": "templates/summary.mustache",
 				"modules.mustache": "templates/modules.mustache",
-				"backendtime.mustache": "templates/backendtime.mustache",
 				"imagesize.mustache": "templates/imagesize.mustache"
 			},
 			"messages": [
@@ -58,12 +56,8 @@
 				"performanceinspector-modules-localstorage-misses",
 				"performanceinspector-modules-localstorage-expired",
 				"performanceinspector-modules-localstorage-totalsize",
-				"performanceinspector-backendtime-time-spent",
 				"performanceinspector-modules-name",
 				"performanceinspector-modules-label",
-				"performanceinspector-backendtime-name",
-				"performanceinspector-backendtime-label",
-				"performanceinspector-backendtime-summary-above-medium",
 				"performanceinspector-imagesize-name",
 				"performanceinspector-imagesize-label",
 				"performanceinspector-imagesize-column-image-name",

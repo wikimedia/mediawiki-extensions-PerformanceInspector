@@ -28,11 +28,6 @@
 	"performanceinspector-modules-localstorage-expired": "Expired",
 	"performanceinspector-modules-localstorage-totalsize": "Total size",
 
-	"performanceinspector-backendtime-name": "Backend time",
-	"performanceinspector-backendtime-label": "Backend time",
-	"performanceinspector-backendtime-summary-above-medium": "The page took $1 {{PLURAL:$1| ms | ms }} to render in the backend.",
-	"performanceinspector-backendtime-time-spent": "The page took $1 {{PLURAL:$1| ms | ms }} to render in the backend.",
-
 	"performanceinspector-imagesize-name": "Image size",
 	"performanceinspector-imagesize-label": "Image size",
 	"performanceinspector-imagesize-column-image-name": "Name",
