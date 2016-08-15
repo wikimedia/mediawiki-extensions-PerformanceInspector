@@ -92,7 +92,14 @@
 				"performanceinspector-newpp-parsed-ttl",
 				"performanceinspector-newpp-dynamic-content",
 				"performanceinspector-newpp-cachereport",
-				"performanceinspector-newpp-value-and-limit"
+				"performanceinspector-newpp-value-and-limit",
+				"performanceinspector-modules-localstorage-description",
+				"performanceinspector-modules-css-description",
+				"performanceinspector-modules-module-description",
+				"performanceinspector-newpp-description",
+				"performanceinspector-newpp-timingprofile-description",
+				"performanceinspector-newpp-scribunto-description",
+				"performanceinspector-newpp-cachereport-description"
 			]
 		}
 	},

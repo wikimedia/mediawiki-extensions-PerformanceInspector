@@ -57,5 +57,12 @@
 	"performanceinspector-newpp-expensivefunctioncount": "The text explaining the expensive parser function count metric",
 	"performanceinspector-newpp-timingprofile": "Header name for the timing profile part",
 	"performanceinspector-newpp-scribunto": "Header name for scribunto report part",
-	"performanceinspector-newpp-cachereport": "Header name for the cache report"
+	"performanceinspector-newpp-cachereport": "Header name for the cache report",
+	"performanceinspector-modules-localstorage-description": "Description explaining the local storage metrics",
+	"performanceinspector-modules-css-description": "Description explaining the CSS list metrics",
+	"performanceinspector-modules-module-description": "Description explaining the module list",
+	"performanceinspector-newpp-description": "Descriptiont explaining the parser report metrics",
+	"performanceinspector-newpp-timingprofile-description": "Description explaining the timing profile metrics",
+	"performanceinspector-newpp-scribunto-description": "Description explaining the scribuntu metrics",
+	"performanceinspector-newpp-cachereport-description": "Description explaining the cache report metrics"
 }

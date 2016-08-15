@@ -60,5 +60,12 @@
 	"performanceinspector-newpp-cached-time": "Cached time",
 	"performanceinspector-newpp-parsed-ttl": "Cache expiry",
 	"performanceinspector-newpp-dynamic-content": "Dynamic content",
-	"performanceinspector-newpp-cachereport": "Parser cache"
+	"performanceinspector-newpp-cachereport": "Parser cache",
+	"performanceinspector-modules-localstorage-description": "How many ResourceLoader modules were loaded from local storage.",
+	"performanceinspector-modules-css-description": "For each ResourceLoader module with styles, count the number of selectors, and count how many match against some element currently in the DOM",
+	"performanceinspector-modules-module-description": "The ResourceLoader modules used by this page.",
+	"performanceinspector-newpp-description": "Information collected when the page was parsed in the backend. Most users will get a cached copy where the page is already parsed.",
+	"performanceinspector-newpp-timingprofile-description": "Time spent parsing the templates for this page.",
+	"performanceinspector-newpp-scribunto-description": "Memory and time usage spent in Lua scripting.",
+	"performanceinspector-newpp-cachereport-description": "When was this page cached in the parser cache."
 }
