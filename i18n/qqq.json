@@ -10,7 +10,6 @@
 	"performanceinspector-dialog-title": "The heading in the dialog that displayes the inspector.",
 	"performanceinspector-dialog-summary": "The name of the summary field for all collected data for the inspector\n{{Identical|Summary}}",
 	"performanceinspector-dialog-cancel": "The text of the cancel button in the dialog\n{{Identical|Cancel}}",
-	"performanceinspector-modules-summary-top-list": "Heading for the top list of largest modules in the summary section.",
 	"performanceinspector-modules-summary-total-size": "The total weight of all modules, displayed in the summary section",
 	"performanceinspector-modules-name": "The name of the module part of the dialog\n{{Identical|Module}}",
 	"performanceinspector-modules-label": "The label of the module part of the dialog",

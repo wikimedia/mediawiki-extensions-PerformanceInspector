@@ -3,7 +3,6 @@
 	var moduleCollector = function runModuleCollector( data ) {
 		var totalSize = 0,
 			barMetrics = [],
-			topThree = data.inspect.modules.slice( 0, 3 ),
 			modulesTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'modules.mustache' );
 
 		function humanSize( bytes ) {
@@ -39,7 +38,6 @@
 		}
 		return {
 			summary: {
-				modulesSummary: topThree,
 				modulesSummarySize: humanSize( totalSize )
 			},
 			view: {
