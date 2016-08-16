@@ -11,16 +11,18 @@
 
 	"performanceinspector-modules-summary-total-size": "The total size of all modules ",
 
-	"performanceinspector-modules-name": "Modules",
-	"performanceinspector-modules-label": "Modules information",
+	"performanceinspector-modules-size-name": "Modules size",
+	"performanceinspector-modules-size-label": "Modules size",
 
-	"performanceinspector-modules-css-title": "CSS",
+	"performanceinspector-modules-css-name": "CSS",
+	"performanceinspector-modules-css-label": "CSS",
 	"performanceinspector-modules-css-column-module": "Module",
 	"performanceinspector-modules-css-column-allselectors": "allSelectors",
 	"performanceinspector-modules-css-column-matchedselectors": "matchedselectors",
 	"performanceinspector-modules-css-column-percentmatched": "percentMatched",
 
-	"performanceinspector-modules-localstorage-title": "Local storage",
+	"performanceinspector-modules-localstorage-name": "Local storage",
+	"performanceinspector-modules-localstorage-label": "Local storage",
 	"performanceinspector-modules-localstorage-disabled": "Local storage is disabled.",
 	"performanceinspector-modules-localstorage-hits": "Hits",
 	"performanceinspector-modules-localstorage-misses": "Misses",

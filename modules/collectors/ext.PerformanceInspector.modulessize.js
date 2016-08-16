@@ -3,7 +3,7 @@
 	var moduleCollector = function runModuleCollector( data ) {
 		var totalSize = 0,
 			barMetrics = [],
-			modulesTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'modules.mustache' );
+			modulesTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'modulessize.mustache' );
 
 		function humanSize( bytes ) {
 			var i = 0,
@@ -41,14 +41,12 @@
 				modulesSummarySize: humanSize( totalSize )
 			},
 			view: {
-				name: 'performanceinspector-modules-name',
-				label: 'performanceinspector-modules-label',
+				name: 'performanceinspector-modules-size-name',
+				label: 'performanceinspector-modules-size-label',
 				template: modulesTemplate,
 				postProcess: postProcess,
 				data: {
 					modules: data.inspect.modules,
-					store: data.inspect.store,
-					css: data.inspect.css,
 					series: barMetrics
 				}
 			}

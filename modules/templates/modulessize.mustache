@@ -1,0 +1,16 @@
+<p>
+	{{#msg}}performanceinspector-modules-module-description{{/msg}}
+</p>
+<div class="barchart">
+	<div id="moduleBarChart">
+		{{#series}}
+			<div class="row">
+				<span class="label">{{name}}</span>
+				<div class="barWrap">
+					<div class="bar" data-value="{{sizeInBytes}}"></div>
+				</div>
+				<span class="value">{{size}}</span>
+			</div>
+		{{/series}}
+	</div>
+</div>

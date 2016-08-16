@@ -1,0 +1,37 @@
+<p>
+	{{#msg}}performanceinspector-modules-css-description{{/msg}}
+</p>
+<table class="wikitable">
+	<thead>
+		<tr>
+			<th>
+				{{#msg}}performanceinspector-modules-css-column-module{{/msg}}
+			</th>
+			<th>
+				{{#msg}}performanceinspector-modules-css-column-allselectors{{/msg}}
+			</th>
+			<th>
+				{{#msg}}performanceinspector-modules-css-column-matchedselectors{{/msg}}
+			</th>
+			<th>
+				{{#msg}}performanceinspector-modules-css-column-percentmatched{{/msg}}
+			</th>
+		</tr>
+	</thead>
+	{{#css}}
+		<tr>
+			<td>
+				{{module}}
+			</td>
+			<td>
+				{{allSelectors}}
+			</td>
+			<td>
+				{{matchedSelectors}}
+			</td>
+			<td>
+				{{percentMatched}}
+			</td>
+		</tr>
+	{{/css}}
+</table>
