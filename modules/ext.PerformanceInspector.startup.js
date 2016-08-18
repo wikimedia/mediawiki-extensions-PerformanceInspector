@@ -12,10 +12,9 @@
 			if ( !inspectData ) {
 				inspectData = mw.loader.using( [ 'mediawiki.inspect' ] ).then( function () {
 					return {
-						// we want the largest module first
 						modules: mw.inspect.reports.size(),
 						css: mw.inspect.reports.css(),
-						store: mw.inspect.reports.store()
+						store: mw.inspect.reports.store()[ 0 ]
 					};
 				} );
 			}
