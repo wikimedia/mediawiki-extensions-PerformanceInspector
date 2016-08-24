@@ -18,7 +18,7 @@
 
 		function humanSize( bytes ) {
 			var i = 0,
-				units = [ '', ' KiB', ' MiB', ' GiB', ' TiB', ' PiB' ];
+				units = [ 'size-bytes', 'size-kilobytes','size-megabytes', 'size-gigabytes' ];
 
 			if ( !$.isNumeric( bytes ) || bytes === 0 ) {
 				return bytes;
@@ -28,7 +28,7 @@
 			}
 			// Maintain one decimal for kB and above, but don't
 			// add ".0" for bytes.
-			return bytes.toFixed( i > 0 ? 1 : 0 ) + units[ i ];
+			return mw.msg( units[ i ], bytes.toFixed( i > 0 ? 1 : 0 ) ) ;
 		}
 
 		function fetchUsingAjax() {

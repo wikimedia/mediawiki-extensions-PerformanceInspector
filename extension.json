@@ -105,7 +105,11 @@
 				"performanceinspector-newpp-description",
 				"performanceinspector-newpp-timingprofile-description",
 				"performanceinspector-newpp-scribunto-description",
-				"performanceinspector-newpp-cachereport-description"
+				"performanceinspector-newpp-cachereport-description",
+				"size-bytes",
+				"size-kilobytes",
+				"size-megabytes",
+				"size-gigabytes"
 			]
 		}
 	},
