@@ -12,7 +12,7 @@
 		"ResourceLoaderTestModules": [ "PerformanceInspectorHooks::onResourceLoaderTestModules" ]
 	},
 	"MessagesDirs": {
-		"BoilerPlate": [ "i18n" ]
+		"PerformanceInspector": [ "i18n" ]
 	},
 	"ResourceModules": {
 		"ext.PerformanceInspector.startup": {
