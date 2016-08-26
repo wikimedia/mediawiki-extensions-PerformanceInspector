@@ -13,6 +13,7 @@ class PerformanceInspectorHooks {
 		$isEdit = ( $action === 'edit' );
 		$title = $out->getTitle();
 		if ( $title->inNamespace( NS_MAIN ) /*&& $isEdit*/ ) {
+			$out->addModuleStyles( [ 'ext.PerformanceInspector.noscript' ] );
 			$out->addModules( array( 'ext.PerformanceInspector.startup' ) );
 		}
 		return true;

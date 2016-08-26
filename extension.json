@@ -19,6 +19,10 @@
 			"scripts": "ext.PerformanceInspector.startup.js",
 			"messages": "performanceinspector-portlet-link"
 		},
+		"ext.PerformanceInspector.noscript": {
+			"position": "top",
+			"styles": "css/ext.PerformanceInspector.noscript.css"
+		},
 		"ext.PerformanceInspector.analyze": {
 			"scripts": [
 				"ext.PerformanceInspector.setup.js",
