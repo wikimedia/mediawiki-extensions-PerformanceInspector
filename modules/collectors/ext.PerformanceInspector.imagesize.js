@@ -48,7 +48,7 @@
 			}
 
 			for ( i = 0; i < img.length; i++ ) {
-				if ( img[ i ].currentSrc ) {
+				if ( img[ i ].currentSrc && img[ i ].currentSrc.indexOf( 'data:image' ) === -1  ) {
 					promises.push( fetchContent( img[ i ].currentSrc ) );
 				}
 			}
@@ -60,7 +60,7 @@
 							images.push( {
 								name: getImageName( values[ i ].url.substring( values[ i ].url.lastIndexOf( '/' ) + 1 ) ),
 								url: values[ i ].url,
-								size: humanSize( values[ i ].contentLength ),
+								size: humanSize( Number( values[ i ].contentLength ) ),
 								warning: values[ i ].contentLength > warningLimitInBytes ? true : false
 							} );
 
