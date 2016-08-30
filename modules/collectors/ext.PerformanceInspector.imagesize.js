@@ -55,17 +55,21 @@
 
 			$.when.apply( $, promises ).done( function () {
 						var values = arguments,
+						sizeRaw,
 						i;
 						for ( i = 0; i < values.length; i++ ) {
+							sizeRaw = Number( values[ i ].contentLength );
 							images.push( {
-								name: getImageName( values[ i ].url.substring( values[ i ].url.lastIndexOf( '/' ) + 1 ) ),
-								url: values[ i ].url,
-								size: humanSize( Number( values[ i ].contentLength ) ),
-								warning: values[ i ].contentLength > warningLimitInBytes ? true : false
-							} );
+									name: getImageName( values[ i ].url.substring( values[ i ].url.lastIndexOf( '/' ) + 1 ) ),
+									url: values[ i ].url,
+									sizeRaw: sizeRaw,
+									size: humanSize( sizeRaw ),
+									warning: values[ i ].contentLength > warningLimitInBytes ? true : false
+								} );
 
 							totalSize += Number( values[ i ].contentLength );
 						}
+						images.sort( function ( a, b ) { return b.sizeRaw - a.sizeRaw;} );
 						deferred.resolve( {
 							summary: {
 								imagesSummary: mw.msg( 'performanceinspector-modules-summary-images', images.length, humanSize( totalSize ), warnings )
