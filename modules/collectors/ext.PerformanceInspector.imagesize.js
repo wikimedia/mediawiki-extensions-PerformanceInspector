@@ -67,7 +67,7 @@
 									warning: values[ i ].contentLength > warningLimitInBytes ? true : false
 								} );
 
-							totalSize += Number( values[ i ].contentLength );
+							totalSize += sizeRaw;
 						}
 						images.sort( function ( a, b ) { return b.sizeRaw - a.sizeRaw;} );
 						deferred.resolve( {
