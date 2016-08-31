@@ -1,24 +1,10 @@
-( function ( mw, $ ) {
+( function ( mw ) {
 
 	var moduleCollector = function runModuleCollector( data ) {
 		var totalSize = 0,
 			barMetrics = [],
-			modulesTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'modulessize.mustache' );
-
-		function humanSize( bytes ) {
-			var i = 0,
-				units = [ 'size-bytes', 'size-kilobytes','size-megabytes', 'size-gigabytes' ];
-
-			if ( !$.isNumeric( bytes ) || bytes === 0 ) {
-				return bytes;
-			}
-			for ( ; bytes >= 1024; bytes /= 1024 ) {
-				i++;
-			}
-			// Maintain one decimal for kB and above, but don't
-			// add ".0" for bytes.
-			return mw.msg( units[ i ], bytes.toFixed( i > 0 ? 1 : 0 ) ) ;
-		}
+			modulesTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'modulessize.mustache' ),
+			humanSize = module.exports.humanSize;
 
 		// Add the data needed for generating the bar chart
 		data.inspect.modules.forEach( function ( module ) {
@@ -54,4 +40,4 @@
 	};
 
 	module.exports.collectors.push( moduleCollector );
-}( mediaWiki, jQuery ) );
+}( mediaWiki ) );
