@@ -66,5 +66,6 @@
 	"performanceinspector-newpp-description": "Descriptiont explaining the parser report metrics",
 	"performanceinspector-newpp-timingprofile-description": "Description explaining the timing profile metrics",
 	"performanceinspector-newpp-scribunto-description": "Description explaining the scribuntu metrics",
-	"performanceinspector-newpp-cachereport-description": "Description explaining the cache report metrics"
+	"performanceinspector-newpp-cachereport-description": "Description explaining the cache report metrics",
+	"performanceinspector-newpp-cachereport-now": "Describe when a cache expires right now"
 }

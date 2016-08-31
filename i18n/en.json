@@ -69,5 +69,6 @@
 	"performanceinspector-newpp-description": "Information collected when the page was parsed in the backend. Most users will get a cached copy where the page is already parsed.",
 	"performanceinspector-newpp-timingprofile-description": "Time spent parsing the templates for this page.",
 	"performanceinspector-newpp-scribunto-description": "Memory and time usage spent in Lua scripting.",
-	"performanceinspector-newpp-cachereport-description": "When was this page cached in the parser cache."
+	"performanceinspector-newpp-cachereport-description": "When was this page cached in the parser cache.",
+	"performanceinspector-newpp-cachereport-now": "Now"
 }

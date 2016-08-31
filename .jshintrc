@@ -22,6 +22,6 @@
 		"OO": false,
 		"require": false,
 		"module": false,
-		"Chartist": false
+		"moment": false
 	}
 }

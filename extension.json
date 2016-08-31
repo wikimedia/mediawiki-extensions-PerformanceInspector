@@ -39,7 +39,8 @@
 			],
 			"dependencies": [
 				"oojs",
-				"oojs-ui"
+				"oojs-ui",
+				"moment"
 			],
 			"templates": {
 				"summary.mustache": "templates/summary.mustache",
@@ -110,6 +111,7 @@
 				"performanceinspector-newpp-timingprofile-description",
 				"performanceinspector-newpp-scribunto-description",
 				"performanceinspector-newpp-cachereport-description",
+				"performanceinspector-newpp-cachereport-now",
 				"size-bytes",
 				"size-kilobytes",
 				"size-megabytes",

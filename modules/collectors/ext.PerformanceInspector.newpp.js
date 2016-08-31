@@ -7,7 +7,7 @@
 			var limitReport = [],
 				timingProfile = [],
 				templates = parserReport.limitreport.timingprofile,
-				i, j, data, holder, item;
+				i, j, data, holder, item, cacheTime, ttlHuman;
 
 			// Push the data for the limit report
 			if ( parserReport.limitreport ) {
@@ -32,10 +32,19 @@
 				timingProfile.push( { name: holder[ 3 ], percentreal: holder[ 0 ], real: holder[ 1 ], calls: holder[ 2 ] } );
 			}
 
+			cacheTime = moment( parserReport.cachereport.timestamp, 'YYYYMMDDHHmmss' );
+			ttlHuman = parserReport.cachereport.ttl === 0 ? mw.msg( 'performanceinspector-newpp-cachereport-now' ) : moment.duration( parserReport.cachereport.ttl ).humanize();
+
 			return { limitReport: limitReport,
 				timingProfile: timingProfile,
 				scribunto: parserReport.scribuntu,
-				cacheReport: parserReport.cachereport
+				cacheReport: {
+					timestamp: cacheTime.format( 'lll' ),
+					ttl: parserReport.cachereport.ttl,
+					ttlHuman: ttlHuman,
+					transientcontent: parserReport.cachereport.transientcontent,
+					origin: parserReport.cachereport.origin
+				}
 			};
 		}
 
