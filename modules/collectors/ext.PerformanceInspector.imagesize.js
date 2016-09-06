@@ -1,6 +1,10 @@
 ( function ( mw, $ ) {
 	/**
-	  	Collect image information. W make a ajax request per image and check the size from the response header.
+	  	Collect image information. Make a ajax request per image and check the size from the response header.
+			In the future lets use the ResourceTiming API to fetch size for images, that will make
+			the inspector faster. We did try it out but Firefox has a bug where local cached assets
+			are not included, meaning using it we would miss images for Firefox users:
+			https://bugzilla.mozilla.org/show_bug.cgi?id=1113676
 	*/
 	var imageSizeCollector = function runImageSizeCollector() {
 		var warningLimitInBytes = 1000000,
