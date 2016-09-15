@@ -1,37 +1,71 @@
 <p>
 	{{#msg}}performanceinspector-modules-css-description{{/msg}}
 </p>
-<table class="wikitable">
+
+<table class="wikitable full">
 	<thead>
 		<tr>
 			<th>
 				{{#msg}}performanceinspector-modules-css-column-module{{/msg}}
 			</th>
 			<th>
-				{{#msg}}performanceinspector-modules-css-column-allselectors{{/msg}}
+				{{#msg}}performanceinspector-modules-css-column-used-selectors{{/msg}}
 			</th>
 			<th>
-				{{#msg}}performanceinspector-modules-css-column-matchedselectors{{/msg}}
-			</th>
-			<th>
-				{{#msg}}performanceinspector-modules-css-column-percentmatched{{/msg}}
 			</th>
 		</tr>
 	</thead>
-	{{#css}}
+	{{#cssResourceLoader}}
 		<tr>
 			<td>
-				{{module}}
+				{{name}}
 			</td>
 			<td>
-				{{allSelectors}}
+				{{selectors}}
 			</td>
-			<td>
-				{{matchedSelectors}}
-			</td>
-			<td>
-				{{percentMatched}}
+			<td><button onClick="$( '#rl' + {{index}} ).toggle();">{{#msg}}performanceinspector-modules-css-show-details{{/msg}}</button></td>
+		</tr>
+		<tr id="rl{{index}}" class="hidden">
+			<td colspan="5" >
+				{{#unmatchedSelectors}}
+					<p>{{.}}</p>
+				{{/unmatchedSelectors}}
 			</td>
 		</tr>
-	{{/css}}
+	{{/cssResourceLoader}}
+</table>
+
+<p>{{#msg}}performanceinspector-modules-css-url-description{{/msg}}</p>
+
+<table class="wikitable full">
+	<thead>
+		<tr>
+			<th>
+				{{#msg}}performanceinspector-modules-css-column-url{{/msg}}
+			</th>
+			<th>
+				{{#msg}}performanceinspector-modules-css-column-used-selectors{{/msg}}
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	{{#cssFromFiles}}
+	<tr>
+		<td class="url">
+			{{name}}
+		</td>
+		<td>
+			{{selectors}}
+		</td>
+		<td><button href="#" onClick="$( '#url' + {{index}} ).toggle();">{{#msg}}performanceinspector-modules-css-show-details{{/msg}}</button>
+		</td>
+	</tr>
+	<tr id="url{{index}}" class="hidden">
+		<td colspan="5">
+			{{#unmatchedSelectors}}
+				<p>{{.}}</p>
+			{{/unmatchedSelectors}}
+		</td>
+	</tr>
+	{{/cssFromFiles}}
 </table>

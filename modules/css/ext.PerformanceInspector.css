@@ -1,8 +1,8 @@
 .barchart {
-  color: white;
-  font-size: 14px;
--}
-
+    color: white;
+    font-size: 14px;
+    -
+}
 .barchart .row {
     position: relative;
     min-height: 26px;
@@ -32,4 +32,16 @@
     line-height: 26px;
     font-weight: bold;
     float: right;
+}
+.hidden {
+    display: none;
+}
+
+.full {
+  width: 100%;
+}
+
+.url {
+    max-width: 200px;
+    word-break: break-all;
 }
