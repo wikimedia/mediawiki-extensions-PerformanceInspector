@@ -112,6 +112,7 @@
 				"performanceinspector-newpp-scribunto-description",
 				"performanceinspector-newpp-cachereport-description",
 				"performanceinspector-newpp-cachereport-now",
+				"performanceinspector-newpp-missing-report",
 				"size-bytes",
 				"size-kilobytes",
 				"size-megabytes",

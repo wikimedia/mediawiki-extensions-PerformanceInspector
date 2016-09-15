@@ -1,7 +1,8 @@
 ( function ( mw ) {
 
 	var newppCollector = function runNewPPCollector() {
-		var template = mw.template.get( 'ext.PerformanceInspector.analyze', 'newpp.mustache' );
+		var template = mw.template.get( 'ext.PerformanceInspector.analyze', 'newpp.mustache' ),
+		report, parserReportSummary, mustacheView;
 
 		function generateMustacheView( parserReport ) {
 			var limitReport = [],
@@ -48,16 +49,21 @@
 			};
 		}
 
+		// in some cases we don't have the wgPageParseReport, see https://phabricator.wikimedia.org/T145717
+		report = mw.config.get( 'wgPageParseReport' );
+		parserReportSummary = report.limitreport ? mw.msg( 'performanceinspector-newpp-summary', mw.config.get( 'wgPageParseReport' ).limitreport.expensivefunctioncount.value ) :  mw.msg( 'performanceinspector-newpp-missing-report' );
+		mustacheView =  report.limitreport  ? generateMustacheView( mw.config.get( 'wgPageParseReport' ) ) : '';
+
 		return {
 			summary: {
-				parserReportSummary: mw.msg( 'performanceinspector-newpp-summary', mw.config.get( 'wgPageParseReport' ).limitreport.expensivefunctioncount.value )
+				parserReportSummary: parserReportSummary
 			},
 			view: {
 				name: 'performanceinspector-newpp-name',
 				label: 'performanceinspector-newpp-label',
 				template: template,
 				data: {
-					report: generateMustacheView( mw.config.get( 'wgPageParseReport' ) )
+					report: mustacheView
 				}
 			}
 		};
