@@ -1,10 +1,6 @@
 ( function ( mw, $ ) {
 	/**
-	  	Collect image information. Make a ajax request per image and check the size from the response header.
-			In the future lets use the ResourceTiming API to fetch size for images, that will make
-			the inspector faster. We did try it out but Firefox has a bug where local cached assets
-			are not included, meaning using it we would miss images for Firefox users:
-			https://bugzilla.mozilla.org/show_bug.cgi?id=1113676
+	  	Collect image information. Make a ajax request per image or use Resource Timinng API and check the size from the response header.
 	*/
 	var imageSizeCollector = function runImageSizeCollector() {
 		var warningLimitInBytes = 1000000,
@@ -14,6 +10,24 @@
 			images = [],
 			humanSize = module.exports.humanSize;
 
+		function isResourceTimingWithSizeSupported() {
+			var wp = window.performance;
+			// Right now we don't support Firefox, we did try it out but Firefox
+			// has a bug where local cached assets are not included, meaning using it
+			// we would miss images for Firefox users:
+			// https://bugzilla.mozilla.org/show_bug.cgi?id=1113676
+			// we have have at least Resource Timing V1
+			if ( wp && wp.getEntriesByType( 'resource' ).length > 0 ) {
+				// do we have support size but not nextHop?
+				// Then we are sure we are not FF but in the long run this
+				// check is evil, Chrome and others will support nextHop soon.
+				if ( wp.getEntriesByType( 'resource' )[ 0 ].encodedBodySize && !wp.getEntriesByType( 'resource' )[ 0 ].nextHopProtocol ) {
+					return true;
+				}
+			}
+			return false;
+		}
+
 		function getImageName( name ) {
 			if ( name.length > maxImageNameLength ) {
 				return name.substr( 0, maxImageNameLength - 1 );
@@ -21,9 +35,26 @@
 			return name;
 		}
 
+		function isImage( name ) {
+			return ( name.match( /\.(jpeg|jpg|gif|png)$/i ) !== null );
+		}
+
+		function fetchUsingRT() {
+			var resources = window.performance.getEntriesByType( 'resource' ),
+			images = [],
+			i;
+
+			for ( i = 0; i < resources.length; i++ ) {
+				if ( isImage( resources[ i ].name ) ) {
+					images.push( { url: resources[ i ].name,
+						contentLength: resources[ i ].encodedBodySize } );
+				}
+			}
+			return images;
+		}
+
 		function fetchUsingAjax() {
-			var deferred = new $.Deferred(),
-			img = document.getElementsByTagName( 'img' ),
+			var img = document.getElementsByTagName( 'img' ),
 			promises = [],
 			i;
 			function fetchContent( url ) {
@@ -36,11 +67,22 @@
 						};
 					} );
 			}
-
 			for ( i = 0; i < img.length; i++ ) {
 				if ( img[ i ].currentSrc && img[ i ].currentSrc.indexOf( 'data:image' ) === -1  ) {
 					promises.push( fetchContent( img[ i ].currentSrc ) );
 				}
+			}
+			return promises;
+		}
+
+		function getImages() {
+			var promises, deferred = new $.Deferred();
+
+			// The browser supports Resource Timing V2
+			if ( isResourceTimingWithSizeSupported() ) {
+				promises = fetchUsingRT();
+			} else {
+				promises = fetchUsingAjax();
 			}
 
 			$.when.apply( $, promises ).done( function () {
@@ -78,7 +120,7 @@
 			return deferred.promise();
 		}
 
-		return fetchUsingAjax();
+		return getImages();
 
 	};
 	module.exports.collectors.push( imageSizeCollector );
