@@ -9,6 +9,7 @@
 
 	OO.inheritClass( PerformanceDialog, OO.ui.ProcessDialog );
 
+	PerformanceDialog.static.name = 'PerformanceInspectorDialog';
 	PerformanceDialog.static.title = OO.ui.deferMsg( 'performanceinspector-dialog-title' );
 
 	PerformanceDialog.static.actions = [ {
