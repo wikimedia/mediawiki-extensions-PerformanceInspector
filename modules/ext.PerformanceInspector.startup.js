@@ -3,8 +3,7 @@
 		inspectData;
 
 	$document.ready( function () {
-		var caPI,
-			caPILink;
+		var caPI;
 
 		function activatePI() {
 			// Lets inspect the current page first, to make sure the result isn't
@@ -62,7 +61,6 @@
 		}
 
 		caPI = $( '#t-performanceinspector' );
-		caPILink = caPI.find( 'a' );
 		caPI.on( 'click', onPIClick );
 	} );
 

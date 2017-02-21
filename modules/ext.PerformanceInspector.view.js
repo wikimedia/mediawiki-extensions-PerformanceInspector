@@ -1,4 +1,3 @@
-/*jshint undef:false */
 ( function ( mw, $ ) {
 
 	var PerformanceDialog = function PiDialog( config, summary, views ) {
@@ -38,7 +37,8 @@
 	};
 
 	PerformanceDialog.prototype.initialize = function () {
-		var self = this,
+		var $summary,
+			self = this,
 			summaryTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'summary.mustache' ),
 			/**
 			 * Help method for getting text messages
@@ -70,6 +70,7 @@
 		// parse the templates and data we get from each info and convert the
 		// to pages
 		self.views.forEach( function ( result ) {
+			var $parsedHTML;
 			result.data.msg = messageFunction;
 
 			$parsedHTML = result.template.render( result.data );
@@ -116,7 +117,7 @@
 
 	module.exports.humanSize = function ( bytes ) {
 		var i = 0,
-			units = [ 'size-bytes', 'size-kilobytes','size-megabytes', 'size-gigabytes' ];
+			units = [ 'size-bytes', 'size-kilobytes', 'size-megabytes', 'size-gigabytes' ];
 
 		if ( !$.isNumeric( bytes ) || bytes === 0 ) {
 			return bytes;
@@ -126,7 +127,7 @@
 		}
 		// Maintain one decimal for kB and above, but don't
 		// add ".0" for bytes.
-		return mw.msg( units[ i ], bytes.toFixed( i > 0 ? 1 : 0 ) ) ;
+		return mw.msg( units[ i ], bytes.toFixed( i > 0 ? 1 : 0 ) );
 	};
 
 }( mediaWiki, jQuery ) );

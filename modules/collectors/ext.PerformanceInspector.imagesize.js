@@ -68,7 +68,7 @@
 					} );
 			}
 			for ( i = 0; i < img.length; i++ ) {
-				if ( img[ i ].currentSrc && img[ i ].currentSrc.indexOf( 'data:image' ) === -1  ) {
+				if ( img[ i ].currentSrc && img[ i ].currentSrc.indexOf( 'data:image' ) === -1 ) {
 					promises.push( fetchContent( img[ i ].currentSrc ) );
 				}
 			}
@@ -96,12 +96,12 @@
 									url: values[ i ].url,
 									sizeRaw: sizeRaw,
 									size: humanSize( sizeRaw ),
-									warning: values[ i ].contentLength > warningLimitInBytes ? true : false
+									warning: values[ i ].contentLength > warningLimitInBytes
 								} );
 
 							totalSize += sizeRaw;
 						}
-						images.sort( function ( a, b ) { return b.sizeRaw - a.sizeRaw;} );
+						images.sort( function ( a, b ) { return b.sizeRaw - a.sizeRaw; } );
 						deferred.resolve( {
 							summary: {
 								imagesSummary: mw.msg( 'performanceinspector-modules-summary-images', images.length, humanSize( totalSize ), warnings )
