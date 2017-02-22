@@ -8,7 +8,7 @@
 		function generateMustacheView( parserReport ) {
 			var limitReport = [],
 				timingProfile = [],
-				templates = parserReport.limitreport.timingprofile,
+				templates = parserReport.limitreport && parserReport.limitreport.timingprofile || [],
 				i, j, data, holder, item, cacheTime, ttlHuman;
 
 			// Push the data for the limit report
@@ -51,9 +51,9 @@
 		}
 
 		// in some cases we don't have the wgPageParseReport, see https://phabricator.wikimedia.org/T145717
-		report = mw.config.get( 'wgPageParseReport' );
-		parserReportSummary = report.limitreport ? mw.msg( 'performanceinspector-newpp-summary', mw.config.get( 'wgPageParseReport' ).limitreport.expensivefunctioncount.value ) : mw.msg( 'performanceinspector-newpp-missing-report' );
-		mustacheView = report.limitreport ? generateMustacheView( mw.config.get( 'wgPageParseReport' ) ) : '';
+		report = mw.config.get( 'wgPageParseReport', {} );
+		parserReportSummary = report.limitreport ? mw.msg( 'performanceinspector-newpp-summary', report.limitreport.expensivefunctioncount.value ) : mw.msg( 'performanceinspector-newpp-missing-report' );
+		mustacheView = report.limitreport ? generateMustacheView( report ) : '';
 
 		return {
 			summary: {
