@@ -1,7 +1,6 @@
 .barchart {
     color: white;
     font-size: 14px;
-    -
 }
 .barchart .row {
     position: relative;
@@ -11,7 +10,6 @@
     background: #999999;
     overflow: hidden;
 }
-.barchart .barWrap {}
 .barchart .barWrap .bar {
     position: absolute;
     top: 0;
@@ -44,4 +42,13 @@
 .url {
     max-width: 200px;
     word-break: break-all;
+}
+
+.mw-pi-url-crop {
+    display: inline-block;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
 }

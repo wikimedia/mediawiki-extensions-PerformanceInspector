@@ -22,6 +22,9 @@
 	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 of $3)",
 	"performanceinspector-modules-css-url-description": "For each CSS URL with styles, count the number of selectors, and count how many match against some element currently in the DOM.",
 	"performanceinspector-modules-css-show-details": "Toggle details",
+	"performanceinspector-modules-css-embeds-description": "For each loaded ResourceLoader module and external stylesheet, detect unused selectors that contain one or more embedded Data URIs.",
+	"performanceinspector-modules-css-column-source": "Source",
+	"performanceinspector-modules-css-column-used-embeds": "Used embeds",
 
 	"performanceinspector-modules-localstorage-name": "Local storage",
 	"performanceinspector-modules-localstorage-label": "Local storage",

@@ -69,3 +69,33 @@
 	</tr>
 	{{/cssFromFiles}}
 </table>
+
+<p>{{#msg}}performanceinspector-modules-css-embeds-description{{/msg}}</p>
+
+<table class="wikitable full">
+	<thead>
+		<tr>
+			<th>
+				{{#msg}}performanceinspector-modules-css-column-source{{/msg}}
+			</th>
+			<th>
+				{{#msg}}performanceinspector-modules-css-column-used-embeds{{/msg}}
+			</th>
+		</tr>
+	</thead>
+	{{#cssUnusedEmbeds}}
+	<tr>
+		<td class="url">
+			{{name}}
+		</td>
+		<td>
+			{{used}}
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><pre>{{#results}}
+{{selector}} &#123; {{prop}}: <span class="mw-pi-url-crop">{{value}}</span>
+{{/results}}</pre></td>
+	</tr>
+	{{/cssUnusedEmbeds}}
+</table>
