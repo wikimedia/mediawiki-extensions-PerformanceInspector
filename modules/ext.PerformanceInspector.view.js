@@ -91,7 +91,7 @@
 	};
 
 	PerformanceDialog.prototype.getBodyHeight = function () {
-		return 350;
+		return 600;
 	};
 
 	PerformanceDialog.prototype.getActionProcess = function ( action ) {
