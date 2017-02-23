@@ -6,7 +6,7 @@
 			return {
 					name: name,
 					selectors: mw.msg( 'performanceinspector-modules-css-used-selectors-values', stats.total !== 0 ?
-							( stats.matched / stats.total * 100 ).toFixed( 2 )  + '%' : null, stats.matched, stats.total ),
+							( stats.matched / stats.total * 100 ).toFixed( 2 ) + '%' : null, stats.matched, stats.total ),
 					unmatchedSelectors: stats.unmatched,
 					index: index
 				};

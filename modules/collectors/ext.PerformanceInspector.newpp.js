@@ -1,3 +1,4 @@
+/* global moment */
 ( function ( mw ) {
 
 	var newppCollector = function runNewPPCollector() {
@@ -15,7 +16,7 @@
 				Object.keys( parserReport.limitreport ).forEach( function ( key ) {
 					if ( key !== 'timingprofile' ) {
 						item = parserReport.limitreport[ key ];
-						limitReport.push( { name:  mw.msg( 'performanceinspector-newpp-' + key ), value: item.limit ? mw.msg( 'performanceinspector-newpp-value-and-limit', item.value, item.limit ) : item } );
+						limitReport.push( { name: mw.msg( 'performanceinspector-newpp-' + key ), value: item.limit ? mw.msg( 'performanceinspector-newpp-value-and-limit', item.value, item.limit ) : item } );
 					}
 				} );
 			}
@@ -51,8 +52,8 @@
 
 		// in some cases we don't have the wgPageParseReport, see https://phabricator.wikimedia.org/T145717
 		report = mw.config.get( 'wgPageParseReport' );
-		parserReportSummary = report.limitreport ? mw.msg( 'performanceinspector-newpp-summary', mw.config.get( 'wgPageParseReport' ).limitreport.expensivefunctioncount.value ) :  mw.msg( 'performanceinspector-newpp-missing-report' );
-		mustacheView =  report.limitreport  ? generateMustacheView( mw.config.get( 'wgPageParseReport' ) ) : '';
+		parserReportSummary = report.limitreport ? mw.msg( 'performanceinspector-newpp-summary', mw.config.get( 'wgPageParseReport' ).limitreport.expensivefunctioncount.value ) : mw.msg( 'performanceinspector-newpp-missing-report' );
+		mustacheView = report.limitreport ? generateMustacheView( mw.config.get( 'wgPageParseReport' ) ) : '';
 
 		return {
 			summary: {
