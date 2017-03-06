@@ -63,7 +63,7 @@
 				// we have styles from a link rel="stylesheet" href
 				// it would be cool if we could separated inline CSS
 				// from resource loaded CSS?
-				if ( style.href ) {
+				if ( style.href && style.cssRules ) {
 					$.each( style.cssRules, function ( index, rule ) {
 						allStyles += rule.cssText;
 					} );
