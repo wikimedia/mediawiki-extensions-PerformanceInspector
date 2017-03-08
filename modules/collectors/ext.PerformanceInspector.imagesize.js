@@ -17,7 +17,7 @@
 			// we would miss images for Firefox users:
 			// https://bugzilla.mozilla.org/show_bug.cgi?id=1113676
 			// we have have at least Resource Timing V1
-			if ( wp && wp.getEntriesByType( 'resource' ).length > 0 ) {
+			if ( wp && wp.getEntriesByType && wp.getEntriesByType( 'resource' ).length > 0 ) {
 				// do we have support size but not nextHop?
 				// Then we are sure we are not FF but in the long run this
 				// check is evil, Chrome and others will support nextHop soon.
