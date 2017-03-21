@@ -149,6 +149,21 @@
 			return analyze( css ).images;
 		}
 
+		function postProcess( $html ) {
+
+			$html.find( '.mw-pi-button' ).each( function () {
+				var button = new OO.ui.ButtonWidget( {
+						label: mw.msg( 'performanceinspector-modules-css-show-details' ),
+						icon: 'info',
+						iconTitle: mw.msg( 'performanceinspector-modules-css-show-details' )
+					} );
+				button.on( 'click', function () {
+						$( button.$element ).closest( 'tr' ).next( 'tr.toggleable' ).toggle();
+					} );
+				$( this ).replaceWith( button.$element );
+			} );
+		}
+
 		modulesTemplate = mw.template.get( 'ext.PerformanceInspector.analyze', 'modulescss.mustache' );
 
 		return {
@@ -158,6 +173,7 @@
 				name: 'performanceinspector-modules-css-name',
 				label: 'performanceinspector-modules-css-label',
 				template: modulesTemplate,
+				postProcess: postProcess,
 				data: {
 					cssResourceLoader: cssResourceLoader( auditSelectors, toView ),
 					cssFromFiles: cssFromURL( auditSelectors, toView ),

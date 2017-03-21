@@ -2,7 +2,7 @@
 	{{#msg}}performanceinspector-modules-css-description{{/msg}}
 </p>
 
-<table class="wikitable full">
+<table class="wikitable mw-pi-inspector">
 	<thead>
 		<tr>
 			<th>
@@ -23,10 +23,12 @@
 			<td>
 				{{selectors}}
 			</td>
-			<td><button onClick="$( '#rl' + {{index}} ).toggle();">{{#msg}}performanceinspector-modules-css-show-details{{/msg}}</button></td>
+			<td>
+				<span class="mw-pi-button"></span>
+			</td>
 		</tr>
-		<tr id="rl{{index}}" class="hidden">
-			<td colspan="5" >
+		<tr class="toggleable hidden">
+			<td colspan="5" class="details" >
 				{{#unmatchedSelectors}}
 					<p>{{.}}</p>
 				{{/unmatchedSelectors}}
@@ -37,7 +39,7 @@
 
 <p>{{#msg}}performanceinspector-modules-css-url-description{{/msg}}</p>
 
-<table class="wikitable full">
+<table class="wikitable mw-pi-inspector">
 	<thead>
 		<tr>
 			<th>
@@ -57,11 +59,12 @@
 		<td>
 			{{selectors}}
 		</td>
-		<td><button href="#" onClick="$( '#url' + {{index}} ).toggle();">{{#msg}}performanceinspector-modules-css-show-details{{/msg}}</button>
+		<td>
+			<span class="mw-pi-button"></span>
 		</td>
 	</tr>
-	<tr id="url{{index}}" class="hidden">
-		<td colspan="5">
+	<tr class="toggleable hidden">
+		<td colspan="5" class="details">
 			{{#unmatchedSelectors}}
 				<p>{{.}}</p>
 			{{/unmatchedSelectors}}
@@ -72,7 +75,7 @@
 
 <p>{{#msg}}performanceinspector-modules-css-embeds-description{{/msg}}</p>
 
-<table class="wikitable full">
+<table class="wikitable mw-pi-inspector">
 	<thead>
 		<tr>
 			<th>
