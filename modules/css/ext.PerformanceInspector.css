@@ -51,7 +51,7 @@
 
 table.mw-pi-inspector {
   vertical-align: middle;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -62,7 +62,10 @@ table.mw-pi-inspector > * > tr > td {
     padding: 0.5em;
 }
 
-td.details {
+td.mw-pi-details {
   vertical-align: top;
-  text-align: left;
+}
+
+td.mw-pi-center {
+  text-align: center;
 }
