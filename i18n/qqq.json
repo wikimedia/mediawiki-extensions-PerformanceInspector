@@ -74,5 +74,6 @@
 	"performanceinspector-newpp-scribunto-description": "Description explaining the scribuntu metrics",
 	"performanceinspector-newpp-cachereport-description": "Description explaining the cache report metrics",
 	"performanceinspector-newpp-cachereport-now": "Describe when a cache expires right now",
-	"performanceinspector-newpp-missing-report": "Message when the original page is missing parser metrics (so that the parser report cannnot be displayed)"
+	"performanceinspector-newpp-missing-report": "Message when the original page is missing parser metrics (so that the parser report cannnot be displayed)",
+	"performanceinspector-pagesize-summary": "Summary message displaying the total and compressed HTML size"
 }

@@ -32,7 +32,8 @@
 				"collectors/ext.PerformanceInspector.modulescss.js",
 				"collectors/ext.PerformanceInspector.moduleslocalstorage.js",
 				"collectors/ext.PerformanceInspector.imagesize.js",
-				"collectors/ext.PerformanceInspector.newpp.js"
+				"collectors/ext.PerformanceInspector.newpp.js",
+				"collectors/ext.PerformanceInspector.pagesize.js"
 			],
 			"styles": [
 				"css/ext.PerformanceInspector.css"
@@ -118,6 +119,7 @@
 				"performanceinspector-newpp-cachereport-description",
 				"performanceinspector-newpp-cachereport-now",
 				"performanceinspector-newpp-missing-report",
+				"performanceinspector-pagesize-summary",
 				"size-bytes",
 				"size-kilobytes",
 				"size-megabytes",

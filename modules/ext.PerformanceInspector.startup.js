@@ -38,6 +38,8 @@
 						$.makeArray( arguments ).forEach( function ( data ) {
 							if ( data.view ) {
 								views.push( data.view );
+							}
+							if ( data.summary ) {
 								Object.keys( data.summary ).forEach( function ( summaryItem ) {
 									summary[ summaryItem ] = data.summary[ summaryItem ];
 								} );
