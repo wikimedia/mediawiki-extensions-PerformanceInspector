@@ -1,1 +1,4 @@
-.client-nojs #t-performanceinspector { display: none; }
+/* stylelint-disable-next-line selector-no-id */
+.client-nojs #t-performanceinspector {
+	display: none;
+}
