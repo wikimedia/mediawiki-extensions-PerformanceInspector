@@ -1,8 +1,7 @@
 ( function ( mw, $ ) {
-	var $document = $( document ),
-		inspectData;
+	var inspectData;
 
-	$document.ready( function () {
+	$( function () {
 		var caPI;
 
 		function activatePI() {
