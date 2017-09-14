@@ -2,6 +2,9 @@
 	"@metadata": {
 		"authors": []
 	},
+	"performanceinspector-beta": "Performance Inspector",
+	"performanceinspector-beta-desc": "A tool to collect performance related information from different parts of MediaWiki for a specific page and present them to the user.",
+
 	"performanceinspector-desc": "Shows page performance metrics",
 	"performanceinspector-portlet-link": "Performance inspector",
 

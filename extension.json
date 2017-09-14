@@ -9,7 +9,8 @@
 	"Hooks": {
 		"BeforePageDisplay": [ "PerformanceInspectorHooks::onBeforePageDisplay" ],
 		"BaseTemplateToolbox": [ "PerformanceInspectorHooks::onBaseTemplateToolbox" ],
-		"ResourceLoaderTestModules": [ "PerformanceInspectorHooks::onResourceLoaderTestModules" ]
+		"ResourceLoaderTestModules": [ "PerformanceInspectorHooks::onResourceLoaderTestModules" ],
+		"GetBetaFeaturePreferences": [ "PerformanceInspectorHooks::onGetBetaFeaturePreferences" ]
 	},
 	"MessagesDirs": {
 		"PerformanceInspector": [ "i18n" ]

@@ -5,6 +5,8 @@
 			"Robby"
 		]
 	},
+	"performanceinspector-beta": "Beta feature title. Appears in the beta tab in user preferences.",
+	"performanceinspector-beta-desc": "Beta feature description. Appears in the beta tab in user preferences.",
 	"performanceinspector-desc": "{{desc|name=PerformanceInspector|url=https://www.mediawiki.org/wiki/Extension:PerformanceInspector}}",
 	"performanceinspector-portlet-link": "The name of the link in the portlet menu, when the inspector is activated.",
 	"performanceinspector-dialog-title": "The heading in the dialog that displayes the inspector.",
