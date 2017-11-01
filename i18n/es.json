@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Macofe"
+		]
+	},
+	"performanceinspector-beta": "Inspector de rendimiento",
+	"performanceinspector-modules-css-column-used-selectors": "Selectores usados",
+	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 de $3)",
+	"performanceinspector-modules-css-show-details": "Alternar detalles",
+	"performanceinspector-modules-css-column-source": "Fuente",
+	"performanceinspector-modules-css-column-used-embeds": "Incrustaciones usadas",
+	"performanceinspector-modules-summary-images": "La página tiene $1 {{PLURAL:$1|imagen|imágenes}} con un tamaño total de $2.",
+	"performanceinspector-newpp-cachereport-now": "Ahora",
+	"performanceinspector-pagesize-summary": "El tamaño del HTML es $1 ($2 comprimido)"
+}
