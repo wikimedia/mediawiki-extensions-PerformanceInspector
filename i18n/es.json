@@ -1,16 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
 	"performanceinspector-beta": "Inspector de rendimiento",
-	"performanceinspector-modules-css-column-used-selectors": "Selectores usados",
+	"performanceinspector-beta-desc": "Una herramienta para recopilar información de rendimiento de varios componentes de MediaWiki por página específica y, posteriormente, mostrarla al usuario.",
+	"performanceinspector-modules-css-column-used-selectors": "Selectores utilizados",
 	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 de $3)",
 	"performanceinspector-modules-css-show-details": "Alternar detalles",
+	"performanceinspector-modules-css-embeds-description": "Por cada módulo y hoja de estilos externa cargada por ResourceLoader, detectar selectores no utilizados que contengan uno o más URI de datos incrustados.",
 	"performanceinspector-modules-css-column-source": "Fuente",
-	"performanceinspector-modules-css-column-used-embeds": "Incrustaciones usadas",
+	"performanceinspector-modules-css-column-used-embeds": "Incrustaciones utilizadas",
 	"performanceinspector-modules-summary-images": "La página tiene $1 {{PLURAL:$1|imagen|imágenes}} con un tamaño total de $2.",
+	"performanceinspector-modules-css-description": "Por cada módulo con estilos de ResourceLoader, contar el número de selectores y cuántos de ellos se relacionan con algún elemento presente en el DOM.",
 	"performanceinspector-newpp-cachereport-now": "Ahora",
 	"performanceinspector-pagesize-summary": "El tamaño del HTML es $1 ($2 comprimido)"
 }

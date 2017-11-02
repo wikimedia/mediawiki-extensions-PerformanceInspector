@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"performanceinspector-modules-css-used-selectors-values": "$1 ($3 중 $2)",
+	"performanceinspector-newpp-cachereport-now": "지금",
+	"performanceinspector-pagesize-summary": "HTML 크기는 $1입니다 (압축된 크기는 $2)"
+}

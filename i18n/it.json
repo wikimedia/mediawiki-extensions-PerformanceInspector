@@ -6,9 +6,8 @@
 	},
 	"performanceinspector-dialog-cancel": "Annulla",
 	"performanceinspector-modules-summary-total-size": "La dimensione totale di tutti i moduli",
-	"performanceinspector-modules-name": "Moduli",
-	"performanceinspector-modules-css-title": "CSS",
 	"performanceinspector-modules-css-column-module": "Modulo",
+	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 di $3)",
 	"performanceinspector-modules-localstorage-expired": "Scaduto",
 	"performanceinspector-modules-localstorage-totalsize": "Dimensione totale",
 	"performanceinspector-imagesize-name": "Dimensione immagine",
@@ -18,5 +17,6 @@
 	"performanceinspector-imagesize-column-image-extra": "Extra",
 	"performanceinspector-imagesize-too-big": "Attenzione",
 	"performanceinspector-imagesize-description": "Qui trovi tutte le immagini caricate su questa pagina.",
-	"performanceinspector-modules-summary-images": "La pagina ha $1 {{PLURAL:$1|immagine|immagini}} con una dimensione totale di $2."
+	"performanceinspector-modules-summary-images": "La pagina ha $1 {{PLURAL:$1|immagine|immagini}} con una dimensione totale di $2.",
+	"performanceinspector-newpp-cachereport-now": "Ora"
 }

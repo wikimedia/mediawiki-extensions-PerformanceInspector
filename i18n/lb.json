@@ -8,6 +8,7 @@
 	"performanceinspector-dialog-cancel": "Ofbriechen",
 	"performanceinspector-modules-summary-total-size": "D'Gesamtgréisst vun alle Moduler",
 	"performanceinspector-modules-css-column-module": "Modul",
+	"performanceinspector-modules-css-column-source": "Quell",
 	"performanceinspector-modules-localstorage-hits": "Treffer",
 	"performanceinspector-modules-localstorage-totalsize": "Gesamtgréisst",
 	"performanceinspector-imagesize-name": "Gréisst vum Bild",
