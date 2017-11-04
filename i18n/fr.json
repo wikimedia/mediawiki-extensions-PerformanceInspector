@@ -65,11 +65,11 @@
 	"performanceinspector-modules-localstorage-description": "Combien de modules de ResourceLoader ont été chargés depuis le stockage local.",
 	"performanceinspector-modules-css-description": "Pour chaque module de ResourceLoader avec des styles, compter le nombre de sélecteurs et combien correspondent à un élément actuellement dans le DOM.",
 	"performanceinspector-modules-module-description": "Les modules de ResourceLoader utilisés par cette page.",
-	"performanceinspector-newpp-description": "Informations récupérées quand la page a été analysée en tâche de fond. La plupart des utilisateurs obtiendront une copie en cache quand la page a déjà été analysée.",
+	"performanceinspector-newpp-description": "Informations récupérées quand la page a été analysée en tâche de fond. La plupart des utilisateurs obtiendront une copie du cache si la page a déjà été analysée.",
 	"performanceinspector-newpp-timingprofile-description": "Temps passé à analyser les modèles de cette page.",
-	"performanceinspector-newpp-scribunto-description": "Mémoire et utilisation du temps dépensés par le script Lua.",
+	"performanceinspector-newpp-scribunto-description": "Mémoire et utilisation du temps passé dans le script Lua.",
 	"performanceinspector-newpp-cachereport-description": "Quand cette page a été mise en cache dans le cache de l’analyseur.",
 	"performanceinspector-newpp-cachereport-now": "Maintenant",
-	"performanceinspector-newpp-missing-report": "Impossible de récupérer le rapport de l’analyseur, donc que les champs du rapport de l’analyseur sont vides.",
+	"performanceinspector-newpp-missing-report": "Impossible de récupérer le rapport de l’analyseur, donc les champs du rapport de l’analyseur sont vides.",
 	"performanceinspector-pagesize-summary": "La taille HTML est $1 ($2 compressé)"
 }

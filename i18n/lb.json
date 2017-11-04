@@ -21,5 +21,6 @@
 	"performanceinspector-imagesize-description": "Hei sinn all D'Biller déi op dëser Säit geluede ginn.",
 	"performanceinspector-newpp-template-time-report-column-name": "Numm",
 	"performanceinspector-newpp-template-time-report-column-real": "Reell",
-	"performanceinspector-newpp-cachereport-now": "Elo"
+	"performanceinspector-newpp-cachereport-now": "Elo",
+	"performanceinspector-pagesize-summary": "D'HTML-Gréisst ass $1 ($2 kompriméiert)"
 }
