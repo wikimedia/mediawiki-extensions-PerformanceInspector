@@ -10,11 +10,10 @@
 	"performanceinspector-dialog-summary": "Resumo",
 	"performanceinspector-dialog-cancel": "Cancelar",
 	"performanceinspector-modules-summary-total-size": "O tamaño total de todos os módulos",
-	"performanceinspector-modules-name": "Módulos",
-	"performanceinspector-modules-label": "Información dos módulos",
-	"performanceinspector-modules-css-title": "CSS",
 	"performanceinspector-modules-css-column-module": "Módulo",
-	"performanceinspector-modules-localstorage-title": "Almacenamento local",
+	"performanceinspector-modules-css-column-source": "Fonte",
+	"performanceinspector-modules-localstorage-name": "Almacenamento local",
+	"performanceinspector-modules-localstorage-label": "Almacenamento local",
 	"performanceinspector-modules-localstorage-disabled": "O almacenamento local está desactivado.",
 	"performanceinspector-modules-localstorage-hits": "Correspondencias",
 	"performanceinspector-modules-localstorage-misses": "Non correspondencias",
@@ -27,5 +26,9 @@
 	"performanceinspector-imagesize-column-image-extra": "Extra",
 	"performanceinspector-imagesize-too-big": "Aviso",
 	"performanceinspector-imagesize-description": "Aquí están todas as imaxes cargadas nesta páxina.",
-	"performanceinspector-modules-summary-images": "A páxina {{PLURAL:$1|ten}} $1 {{PLURAL:$1|imaxe|imaxes}} cun tamaño total de $2."
+	"performanceinspector-modules-summary-images": "A páxina {{PLURAL:$1|ten}} $1 {{PLURAL:$1|imaxe|imaxes}} cun tamaño total de $2.",
+	"performanceinspector-newpp-column-name": "Nome",
+	"performanceinspector-newpp-column-value": "Valor",
+	"performanceinspector-newpp-template-time-report-column-name": "Nome",
+	"performanceinspector-newpp-cachereport-now": "Agora"
 }
