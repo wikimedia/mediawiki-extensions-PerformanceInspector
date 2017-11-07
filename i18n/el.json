@@ -17,5 +17,6 @@
 	"performanceinspector-newpp-summary": "Η σελίδα έχει μια ακριβή λειτουργία $1 {{PLURAL: $|κλήση|κλήσεις}}.",
 	"performanceinspector-modules-css-description": "Για κάθε στοιχείο του υπολογιστή ResourceLoader με στυλ, μετρήστε τον αριθμό επιλογών, και μετρήστε πόσοι συνδυασμοί υπάρχουν έναντι κάθε στοιχείου στο DOM.",
 	"performanceinspector-newpp-cachereport-now": "Τώρα",
+	"performanceinspector-newpp-missing-report": "Δεν μπόρεσε να προσκομίσει δελτίο στοιχείων αναλυτή έτσι τα πεδία δελτίου του αναλυτή θα είναι κενά.",
 	"performanceinspector-pagesize-summary": "Το μέγεθος HTML είναι $1 (συμπιεσμένο κατά $2)"
 }
