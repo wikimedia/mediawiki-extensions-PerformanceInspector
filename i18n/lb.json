@@ -19,6 +19,8 @@
 	"performanceinspector-imagesize-column-image-extra": "Extra",
 	"performanceinspector-imagesize-too-big": "Warnung",
 	"performanceinspector-imagesize-description": "Hei sinn all D'Biller déi op dëser Säit geluede ginn.",
+	"performanceinspector-newpp-column-name": "Numm",
+	"performanceinspector-newpp-column-value": "Wäert",
 	"performanceinspector-newpp-template-time-report-column-name": "Numm",
 	"performanceinspector-newpp-template-time-report-column-real": "Reell",
 	"performanceinspector-newpp-cachereport-now": "Elo",
