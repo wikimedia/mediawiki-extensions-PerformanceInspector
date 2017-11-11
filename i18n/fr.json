@@ -45,7 +45,7 @@
 	"performanceinspector-newpp-walltime": "Utilisation en temps-réel",
 	"performanceinspector-newpp-ppvisitednodes": "Nombre de nœuds visités par le préprocesseur",
 	"performanceinspector-newpp-ppgeneratednodes": "Nombres de nœud générés par le préprocesseur",
-	"performanceinspector-newpp-postexpandincludesize": "Taille incluse après expansion (en octets)",
+	"performanceinspector-newpp-postexpandincludesize": "Taille de l'inclusion après expansion (en octets)",
 	"performanceinspector-newpp-templateargumentsize": "Taille d’argument de modèle (en octets)",
 	"performanceinspector-newpp-expansiondepth": "Plus grande profondeur d’expansion",
 	"performanceinspector-newpp-expensivefunctioncount": "Compteur de fonction d’analyse coûteuse",
@@ -71,5 +71,5 @@
 	"performanceinspector-newpp-cachereport-description": "Quand cette page a été mise en cache dans le cache de l’analyseur.",
 	"performanceinspector-newpp-cachereport-now": "Maintenant",
 	"performanceinspector-newpp-missing-report": "Impossible de récupérer le rapport de l’analyseur, donc les champs du rapport de l’analyseur sont vides.",
-	"performanceinspector-pagesize-summary": "La taille HTML est $1 ($2 compressé)"
+	"performanceinspector-pagesize-summary": "La taille du HTML est $1 ($2 compressé)"
 }
