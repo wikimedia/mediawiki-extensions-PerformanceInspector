@@ -14,7 +14,7 @@
 	"performanceinspector-dialog-summary": "Résumé",
 	"performanceinspector-dialog-cancel": "Annuler",
 	"performanceinspector-modules-summary-total-size": "La taille totale de tous les modules",
-	"performanceinspector-modules-size-name": "Taille des modules",
+	"performanceinspector-modules-size-name": "Taille du module",
 	"performanceinspector-modules-size-label": "Taille du module",
 	"performanceinspector-modules-css-column-module": "Module",
 	"performanceinspector-modules-css-column-used-selectors": "Marqueurs utilisés",
