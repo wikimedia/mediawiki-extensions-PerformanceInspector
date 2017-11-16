@@ -60,5 +60,14 @@
 	"performanceinspector-newpp-parsed-ttl": "Caducidá de caché",
 	"performanceinspector-newpp-dynamic-content": "Conteníu dinámicu",
 	"performanceinspector-newpp-cachereport": "Caché del analizador",
-	"performanceinspector-modules-localstorage-description": "Cuántos módulos de ResourceLoader cargáronse dende l'almacenamientu llocal."
+	"performanceinspector-modules-localstorage-description": "Cuántos módulos de ResourceLoader cargáronse dende l'almacenamientu llocal.",
+	"performanceinspector-modules-css-description": "Per cada módulu con estilos de ResourceLoader, cuntar el númberu de selectores y cuántos d'ellos casen con dalgún elementu presente nel DOM.",
+	"performanceinspector-modules-module-description": "Los módulos de ResourceLoader utilizaos por esta páxina.",
+	"performanceinspector-newpp-description": "Información collechada cuando s'analizó la páxina nel motor. La mayor parte d'usuarios recibirá una copia de la caché cuando la páxina yá ta analizada.",
+	"performanceinspector-newpp-timingprofile-description": "Tiempu gastáu analizando les plantíes d'esta páxina.",
+	"performanceinspector-newpp-scribunto-description": "Usu de memoria y tiempu gastáu nos scripts en Lua.",
+	"performanceinspector-newpp-cachereport-description": "Cuándo se guardó esta páxina na caché del analizador.",
+	"performanceinspector-newpp-cachereport-now": "Agora",
+	"performanceinspector-newpp-missing-report": "Nun pudieron llograse los datos del informe del analizador. Los campos del informe del analizador van tar vacíos.",
+	"performanceinspector-pagesize-summary": "El tamañu del HTML ye $1 ($2 comprimíu)"
 }
