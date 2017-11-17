@@ -3,7 +3,8 @@
 		"authors": [
 			"Gomoko",
 			"Wladek92",
-			"Djiboun"
+			"Djiboun",
+			"Urhixidur"
 		]
 	},
 	"performanceinspector-beta": "Inspecteur de performance",
@@ -44,7 +45,7 @@
 	"performanceinspector-newpp-cputime": "Utilisation du processeur",
 	"performanceinspector-newpp-walltime": "Utilisation en temps-réel",
 	"performanceinspector-newpp-ppvisitednodes": "Nombre de nœuds visités par le préprocesseur",
-	"performanceinspector-newpp-ppgeneratednodes": "Nombres de nœud générés par le préprocesseur",
+	"performanceinspector-newpp-ppgeneratednodes": "Nombres de nœuds générés par le préprocesseur",
 	"performanceinspector-newpp-postexpandincludesize": "Taille de l'inclusion après expansion (en octets)",
 	"performanceinspector-newpp-templateargumentsize": "Taille d’argument de modèle (en octets)",
 	"performanceinspector-newpp-expansiondepth": "Plus grande profondeur d’expansion",
@@ -67,8 +68,8 @@
 	"performanceinspector-modules-module-description": "Les modules de ResourceLoader utilisés par cette page.",
 	"performanceinspector-newpp-description": "Informations récupérées quand la page a été analysée en tâche de fond. La plupart des utilisateurs obtiendront une copie du cache si la page a déjà été analysée.",
 	"performanceinspector-newpp-timingprofile-description": "Temps passé à analyser les modèles de cette page.",
-	"performanceinspector-newpp-scribunto-description": "Mémoire et utilisation du temps passé dans le script Lua.",
-	"performanceinspector-newpp-cachereport-description": "Quand cette page a été mise en cache dans le cache de l’analyseur.",
+	"performanceinspector-newpp-scribunto-description": "Mémoire et temps consommés par le script Lua.",
+	"performanceinspector-newpp-cachereport-description": "Quand cette page a été mise en cache par l’analyseur.",
 	"performanceinspector-newpp-cachereport-now": "Maintenant",
 	"performanceinspector-newpp-missing-report": "Impossible de récupérer le rapport de l’analyseur, donc les champs du rapport de l’analyseur sont vides.",
 	"performanceinspector-pagesize-summary": "La taille du HTML est $1 ($2 compressé)"
