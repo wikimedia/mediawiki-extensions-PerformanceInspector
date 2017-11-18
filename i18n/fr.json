@@ -43,7 +43,7 @@
 	"performanceinspector-modules-summary-images": "La page a $1 {{PLURAL:$1|image|images}} pour une taille totale de $2.",
 	"performanceinspector-newpp-summary": "La page a $1 {{PLURAL:$1|appel|appels}} à des fonctions coûteuses.",
 	"performanceinspector-newpp-cputime": "Utilisation du processeur",
-	"performanceinspector-newpp-walltime": "Utilisation en temps-réel",
+	"performanceinspector-newpp-walltime": "Utilisation réelle (s)",
 	"performanceinspector-newpp-ppvisitednodes": "Nombre de nœuds visités par le préprocesseur",
 	"performanceinspector-newpp-ppgeneratednodes": "Nombres de nœuds générés par le préprocesseur",
 	"performanceinspector-newpp-postexpandincludesize": "Taille de l'inclusion après expansion (en octets)",
