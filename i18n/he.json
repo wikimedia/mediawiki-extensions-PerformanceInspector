@@ -6,8 +6,6 @@
 	},
 	"performanceinspector-dialog-summary": "תקציר",
 	"performanceinspector-dialog-cancel": "ביטול",
-	"performanceinspector-modules-css-title": "CSS",
-	"performanceinspector-modules-localstorage-title": "אחסון מקומי",
 	"performanceinspector-modules-localstorage-disabled": "האחסון המקומי מבוטל.",
 	"performanceinspector-modules-localstorage-expired": "פקעו",
 	"performanceinspector-modules-localstorage-totalsize": "גודל כולל",

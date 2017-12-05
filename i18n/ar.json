@@ -4,6 +4,10 @@
 			"Maroen1990"
 		]
 	},
+	"performanceinspector-dialog-summary": "ملخص",
+	"performanceinspector-dialog-cancel": "إلغاء",
+	"performanceinspector-modules-localstorage-hits": "ضربات",
+	"performanceinspector-modules-localstorage-totalsize": "الحجم الاجمالي",
 	"performanceinspector-imagesize-name": "حجم الصورة",
 	"performanceinspector-imagesize-label": "حجم الصورة",
 	"performanceinspector-imagesize-column-image-name": "الاسم",
