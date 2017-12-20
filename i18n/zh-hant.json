@@ -6,5 +6,6 @@
 	},
 	"performanceinspector-dialog-summary": "摘要",
 	"performanceinspector-dialog-cancel": "取消",
-	"performanceinspector-modules-css-column-module": "模組"
+	"performanceinspector-modules-css-column-module": "模組",
+	"performanceinspector-imagesize-column-size": "尺寸"
 }
