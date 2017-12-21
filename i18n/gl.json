@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Athena in Wonderland"
 		]
 	},
 	"performanceinspector-desc": "Mostra a páxina das métricas de rendemento",
@@ -40,5 +41,6 @@
 	"performanceinspector-newpp-template-time-report-column-calls": "Chamadas",
 	"performanceinspector-newpp-parsed-by": "Analizado por",
 	"performanceinspector-newpp-cached-time": "Tempo en caché",
+	"performanceinspector-newpp-cachereport": "Analizador da memoria caché",
 	"performanceinspector-newpp-cachereport-now": "Agora"
 }
