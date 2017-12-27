@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"performanceinspector-beta": "Inspetor de desempenho",
+	"performanceinspector-beta-desc": "Uma ferramenta que colige informação relacionada com o desempenho vinda de diferentes partes do MediaWiki para uma página específica e apresenta-a ao utilizador.",
+	"performanceinspector-desc": "Mostra métricas de desempenho das páginas",
+	"performanceinspector-portlet-link": "Inspetor de desempenho",
+	"performanceinspector-dialog-title": "Inspetor de desempenho",
+	"performanceinspector-dialog-summary": "Sumário",
+	"performanceinspector-dialog-cancel": "Cancelar",
+	"performanceinspector-modules-summary-total-size": "O tamanho total de todos os módulos",
+	"performanceinspector-modules-size-name": "Tamanho dos módulos",
+	"performanceinspector-modules-size-label": "Tamanho dos módulos",
+	"performanceinspector-modules-css-column-module": "Módulo"
+}
