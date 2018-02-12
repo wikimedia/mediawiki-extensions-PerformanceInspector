@@ -21,7 +21,6 @@
 			"messages": "performanceinspector-portlet-link"
 		},
 		"ext.PerformanceInspector.noscript": {
-			"position": "top",
 			"styles": "css/ext.PerformanceInspector.noscript.css"
 		},
 		"ext.PerformanceInspector.analyze": {
