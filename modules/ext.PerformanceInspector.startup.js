@@ -18,13 +18,16 @@
 			}
 
 			inspectData.then( function ( moduleData ) {
-				$.when( mw.loader.using( [ 'ext.PerformanceInspector.analyze' ] ), $.ready ).then( function () {
-					var collectors = mw.loader.require( 'ext.PerformanceInspector.analyze' ).collectors,
+				$.when(
+					mw.loader.using( [ 'ext.PerformanceInspector.analyze' ] ),
+					$.ready
+				).then( function ( require ) {
+					var collectors = require( 'ext.PerformanceInspector.analyze' ).collectors,
 						views = [],
 						summary = {},
 						windowManager = new OO.ui.WindowManager(),
 						promises = [],
-						PiDialog = mw.loader.require( 'ext.PerformanceInspector.analyze' ).PiDialog,
+						PiDialog = require( 'ext.PerformanceInspector.analyze' ).PiDialog,
 						dialog;
 
 					// for each collector object collect summary and view data and

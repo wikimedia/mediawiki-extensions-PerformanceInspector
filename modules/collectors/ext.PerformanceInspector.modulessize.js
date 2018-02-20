@@ -19,7 +19,7 @@
 		} );
 
 		function postProcess( html ) {
-			var generate = mw.loader.require( 'ext.PerformanceInspector.analyze' ).barChart;
+			var generate = require( 'ext.PerformanceInspector.analyze' ).barChart;
 			generate( html, '.bar' );
 		}
 		return {
