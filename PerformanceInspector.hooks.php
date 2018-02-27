@@ -18,9 +18,10 @@ class PerformanceInspectorHooks {
 	}
 
 	public static function onBaseTemplateToolbox( BaseTemplate $baseTemplate, array &$toolbox ) {
-		$user = RequestContext::getMain()->getUser();
+		$title = $baseTemplate->getSkin()->getTitle();
+		$user = $baseTemplate->getSkin()->getUser();
 
-		if ( $user->getOption( 'performanceinspector' ) ) {
+		if ( $title->inNamespace( NS_MAIN ) && $user->getOption( 'performanceinspector' ) ) {
 			$toolbox['performanceinspector'] = [
 				'text' => $baseTemplate->getMsg( 'performanceinspector-portlet-link' )->text(),
 				'href' => '#',
