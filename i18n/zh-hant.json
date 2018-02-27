@@ -1,11 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"A2093064"
 		]
 	},
+	"performanceinspector-beta": "性能檢查器",
+	"performanceinspector-beta-desc": "從MediaWiki的不同部分，為特定頁面收集性能相關資訊的工具，並展示給使用者。",
+	"performanceinspector-desc": "顯示頁面性能標準",
+	"performanceinspector-portlet-link": "性能檢查器",
+	"performanceinspector-dialog-title": "性能檢查器",
 	"performanceinspector-dialog-summary": "摘要",
 	"performanceinspector-dialog-cancel": "取消",
+	"performanceinspector-modules-summary-total-size": "所有模組的大小總和",
+	"performanceinspector-modules-size-name": "模組大小",
+	"performanceinspector-modules-size-label": "模組大小",
 	"performanceinspector-modules-css-column-module": "模組",
-	"performanceinspector-imagesize-column-size": "尺寸"
+	"performanceinspector-modules-css-column-used-selectors": "使用的選擇器",
+	"performanceinspector-modules-css-used-selectors-values": "$1（$2個，共$3個）",
+	"performanceinspector-modules-css-show-details": "切換詳細資料",
+	"performanceinspector-modules-css-column-source": "來源",
+	"performanceinspector-modules-css-column-used-embeds": "使用的嵌入",
+	"performanceinspector-modules-localstorage-name": "本地儲存",
+	"performanceinspector-modules-localstorage-label": "本地儲存",
+	"performanceinspector-modules-localstorage-disabled": "本地儲存已停用。",
+	"performanceinspector-modules-localstorage-hits": "命中",
+	"performanceinspector-modules-localstorage-misses": "未命中",
+	"performanceinspector-modules-localstorage-expired": "已過期",
+	"performanceinspector-modules-localstorage-totalsize": "大小總和",
+	"performanceinspector-imagesize-name": "圖片大小",
+	"performanceinspector-imagesize-label": "圖片大小",
+	"performanceinspector-imagesize-column-image-name": "名稱",
+	"performanceinspector-imagesize-column-size": "尺寸",
+	"performanceinspector-imagesize-too-big": "警告",
+	"performanceinspector-imagesize-description": "這裡是所有在此頁面上載入的圖片。",
+	"performanceinspector-modules-summary-images": "頁面有$1張{{PLURAL:$1|圖片}}，總大小$2。"
 }
