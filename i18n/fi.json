@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nike"
+			"Nike",
+			"Pyscowicz"
 		]
 	},
 	"performanceinspector-desc": "Näytä sivun suorituskysymittarit",
@@ -15,5 +16,7 @@
 	"performanceinspector-modules-localstorage-hits": "Osumia",
 	"performanceinspector-modules-localstorage-misses": "Huteja",
 	"performanceinspector-modules-localstorage-expired": "Vanhentunut",
-	"performanceinspector-modules-localstorage-totalsize": "Koko yhteensä"
+	"performanceinspector-modules-localstorage-totalsize": "Koko yhteensä",
+	"performanceinspector-newpp-column-name": "Nimi",
+	"performanceinspector-newpp-template-time-report-column-name": "Nimi"
 }
