@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"Amire80"
 		]
 	},
 	"performanceinspector-dialog-summary": "תקציר",
@@ -16,5 +17,6 @@
 	"performanceinspector-imagesize-column-image-extra": "מידע נוסף",
 	"performanceinspector-imagesize-too-big": "אזהרה",
 	"performanceinspector-imagesize-description": "להלן רשימה של כל התמונות בדף הזה.",
-	"performanceinspector-modules-summary-images": "בדף יש {{PLURAL:$1|תמונה אחת שגודלה|$1 תמונות שגודלן הכולל}} הוא $2."
+	"performanceinspector-modules-summary-images": "בדף יש {{PLURAL:$1|תמונה אחת שגודלה|$1 תמונות שגודלן הכולל}} הוא $2.",
+	"performanceinspector-newpp-cachereport-now": "עכשיו"
 }

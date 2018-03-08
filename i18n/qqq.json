@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Robby"
+			"Robby",
+			"Amire80"
 		]
 	},
 	"performanceinspector-beta": "Beta feature title. Appears in the beta tab in user preferences.",
@@ -20,7 +21,7 @@
 	"performanceinspector-modules-css-column-module": "The column name for modules in the CSS section\n{{Identical|Module}}",
 	"performanceinspector-modules-css-column-used-selectors": "The column name for all used selectors in the CSS section",
 	"performanceinspector-modules-css-column-url": "The column name for a CSS fetched from a URL in the CSS section",
-	"performanceinspector-modules-css-used-selectors-values": "Used selectors in percent($1), number of used selector ($2) and total selectors ($3)",
+	"performanceinspector-modules-css-used-selectors-values": "Used selectors in percent ($1), number of used selector ($2) and total selectors ($3)",
 	"performanceinspector-modules-css-url-description": "Description explaining the CSS loaded by URL list metrics",
 	"performanceinspector-modules-css-show-details": "The name of the link to show more details about unnused CSS",
 	"performanceinspector-modules-css-embeds-description": "The description above the table showing unused CSS image embeds on this page",
