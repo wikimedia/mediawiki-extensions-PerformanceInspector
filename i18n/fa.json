@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ladsgroup"
+		]
+	},
+	"performanceinspector-beta": "بازبین کارایی",
+	"performanceinspector-beta-desc": "یک ابزار برای جمع‌آوری اطلاعات مربوط به بخش‌های مختلف مدیاویکی برای یک صفحه خاص و نمایش آن به کاربر",
+	"performanceinspector-desc": "نمایش متریک‌های کارایی صفحه",
+	"performanceinspector-portlet-link": "بازبین کارایی",
+	"performanceinspector-dialog-title": "بازبین کارایی",
+	"performanceinspector-dialog-summary": "خلاصه",
+	"performanceinspector-dialog-cancel": "انصراف",
+	"performanceinspector-modules-summary-total-size": "مجموع اندازه همه پودمان‌ها",
+	"performanceinspector-modules-size-name": "اندازه پودمان",
+	"performanceinspector-modules-size-label": "اندازه پودمان",
+	"performanceinspector-modules-css-column-module": "پودمان",
+	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 از $3)",
+	"performanceinspector-modules-css-column-source": "منبع",
+	"performanceinspector-modules-localstorage-hits": "برخورد",
+	"performanceinspector-modules-localstorage-misses": "عدم برخورد",
+	"performanceinspector-modules-localstorage-expired": "منقضی‌شده",
+	"performanceinspector-modules-localstorage-totalsize": "مجموع اندازه",
+	"performanceinspector-imagesize-name": "اندازه تصویر",
+	"performanceinspector-imagesize-label": "اندازه تصویر",
+	"performanceinspector-imagesize-column-image-name": "نام",
+	"performanceinspector-imagesize-column-size": "اندازه",
+	"performanceinspector-imagesize-column-image-extra": "اضافه",
+	"performanceinspector-imagesize-too-big": "هشدار",
+	"performanceinspector-newpp-cputime": "زمان مصرف در CPU (ثانیه)",
+	"performanceinspector-newpp-column-name": "نام",
+	"performanceinspector-newpp-column-value": "مقدار",
+	"performanceinspector-newpp-template-time-report-column-name": "نام",
+	"performanceinspector-newpp-template-time-report-column-real": "واقعی",
+	"performanceinspector-newpp-cachereport-now": "اکنون"
+}
