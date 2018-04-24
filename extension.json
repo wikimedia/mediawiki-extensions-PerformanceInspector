@@ -10,7 +10,7 @@
 		"BeforePageDisplay": [ "PerformanceInspectorHooks::onBeforePageDisplay" ],
 		"BaseTemplateToolbox": [ "PerformanceInspectorHooks::onBaseTemplateToolbox" ],
 		"ResourceLoaderTestModules": [ "PerformanceInspectorHooks::onResourceLoaderTestModules" ],
-		"GetBetaFeaturePreferences": [ "PerformanceInspectorHooks::onGetBetaFeaturePreferences" ]
+		"GetPreferences": [ "PerformanceInspectorHooks::onGetPreferences" ]
 	},
 	"MessagesDirs": {
 		"PerformanceInspector": [ "i18n" ]

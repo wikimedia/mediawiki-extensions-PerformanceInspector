@@ -7,21 +7,11 @@
  */
 
 class PerformanceInspectorHooks {
-	/**
-	 * @param User $user
-	 *
-	 * @return bool
-	 */
-	private static function isBetaFeatureEnabled( User $user ) {
-		return class_exists( 'BetaFeatures' )
-			&& BetaFeatures::isFeatureEnabled( $user, 'performanceinspector' );
-	}
-
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 		$title = $out->getTitle();
 		$user = $out->getUser();
 
-		if ( $title->inNamespace( NS_MAIN ) && self::isBetaFeatureEnabled( $user ) ) {
+		if ( $title->inNamespace( NS_MAIN ) && $user->getOption( 'performanceinspector' ) ) {
 			$out->addModuleStyles( [ 'ext.PerformanceInspector.noscript' ] );
 			$out->addModules( [ 'ext.PerformanceInspector.startup' ] );
 		}
@@ -30,7 +20,7 @@ class PerformanceInspectorHooks {
 	public static function onBaseTemplateToolbox( BaseTemplate $baseTemplate, array &$toolbox ) {
 		$user = RequestContext::getMain()->getUser();
 
-		if ( self::isBetaFeatureEnabled( $user ) ) {
+		if ( $user->getOption( 'performanceinspector' ) ) {
 			$toolbox['performanceinspector'] = [
 				'text' => $baseTemplate->getMsg( 'performanceinspector-portlet-link' )->text(),
 				'href' => '#',
@@ -51,27 +41,20 @@ class PerformanceInspectorHooks {
 	}
 
 	/**
-	 * Handler for the GetBetaFeaturePreferences hook.
-	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/GetBetaFeaturePreferences
+	 * Handler for the GetPreferences hook.
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/GetPreferences
 	 *
-	 * @param User $user User to get preferences for
-	 * @param array &$preferences Preferences array
-	 *
-	 * @return bool true in all cases
+	 * @param \User $user
+	 * @param array &$defaultPreferences
+	 * @return bool
 	 */
-	public static function onGetBetaFeaturePreferences( User $user, array &$preferences ) {
-		$preferences['performanceinspector'] = [
-			'label-message' => 'performanceinspector-beta',
-			'desc-message' => 'performanceinspector-beta-desc',
-			'info-link' => 'https://www.mediawiki.org/wiki/Special:MyLanguage/' .
-							'Extension:PerformanceInspector',
-			'discussion-link' => 'https://www.mediawiki.org/wiki/' .
-								'Extension_talk:PerformanceInspector',
-			'requirements' => [
-				'javascript' => true,
-			]
+	public static function onGetPreferences( $user, &$defaultPreferences ) {
+		$defaultPreferences['performanceinspector'] = [
+			'type' => 'toggle',
+			'label-message' => 'performanceinspector-pref-label',
+			'help-message' => 'performanceinspector-pref-help',
+			'section' => 'editing/developertools'
 		];
-
 		return true;
 	}
 }

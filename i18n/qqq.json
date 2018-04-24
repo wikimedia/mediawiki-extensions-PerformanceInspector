@@ -6,8 +6,8 @@
 			"Amire80"
 		]
 	},
-	"performanceinspector-beta": "Beta feature title. Appears in the beta tab in user preferences.",
-	"performanceinspector-beta-desc": "Beta feature description. Appears in the beta tab in user preferences.",
+	"performanceinspector-pref-label": "The label of the option to enable the extension on the Preferences page",
+	"performanceinspector-pref-help": "The help message of the option to enable the extension on the Preferences page, describing the extension",
 	"performanceinspector-desc": "{{desc|name=PerformanceInspector|url=https://www.mediawiki.org/wiki/Extension:PerformanceInspector}}",
 	"performanceinspector-portlet-link": "The name of the link in the portlet menu, when the inspector is activated.",
 	"performanceinspector-dialog-title": "The heading in the dialog that displayes the inspector.",
