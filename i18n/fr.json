@@ -7,8 +7,6 @@
 			"Urhixidur"
 		]
 	},
-	"performanceinspector-beta": "Inspecteur de performance",
-	"performanceinspector-beta-desc": "Un outil pour collecter les informations liées aux performances des différentes parties de MediaWiki pour une page spécifique et les présenter à l'utilisateur.",
 	"performanceinspector-desc": "Affiche la page des métriques de performance",
 	"performanceinspector-portlet-link": "Inspecteur de performance",
 	"performanceinspector-dialog-title": "Inspecteur de performance",

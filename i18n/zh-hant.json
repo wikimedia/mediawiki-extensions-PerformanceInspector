@@ -5,8 +5,6 @@
 			"A2093064"
 		]
 	},
-	"performanceinspector-beta": "性能檢查器",
-	"performanceinspector-beta-desc": "從MediaWiki的不同部分，為特定頁面收集性能相關資訊的工具，並展示給使用者。",
 	"performanceinspector-desc": "顯示頁面性能標準",
 	"performanceinspector-portlet-link": "性能檢查器",
 	"performanceinspector-dialog-title": "性能檢查器",

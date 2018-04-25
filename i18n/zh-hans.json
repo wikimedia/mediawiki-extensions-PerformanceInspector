@@ -4,8 +4,6 @@
 			"Liuxinyu970226"
 		]
 	},
-	"performanceinspector-beta": "性能检查器",
-	"performanceinspector-beta-desc": "从MediaWiki的不同部分，为特定页面收集性能相关信息的工具，并展示给用户。",
 	"performanceinspector-desc": "显示页面性能标准",
 	"performanceinspector-portlet-link": "性能检查器",
 	"performanceinspector-dialog-title": "性能检查器",

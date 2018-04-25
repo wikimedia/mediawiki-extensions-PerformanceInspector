@@ -4,8 +4,6 @@
 			"KATRINE1992"
 		]
 	},
-	"performanceinspector-beta": "Έλεγχος Απόδοσης",
-	"performanceinspector-beta-desc": "Ένα εργαλείο για συλλογή σχετικών πληροφοριών απόδοσης από διαφορετικά τμήματα του MediaWiki για μια ειδική σελίδα και παρουσίαση στον χρήστη.",
 	"performanceinspector-modules-css-column-used-selectors": "Εφαρμοσμένες επιλογές",
 	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 πάνω σε $3)",
 	"performanceinspector-modules-css-url-description": "Για κάθε CSS URL με στυλ, μετρήστε τον αριθμό επιλογών και πόσοι συνδυασμοί υπάρχουν έναντι μερικών στοιχείων στο DOM.",

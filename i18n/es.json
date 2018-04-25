@@ -6,8 +6,6 @@
 			"KATRINE1992"
 		]
 	},
-	"performanceinspector-beta": "Inspector de rendimiento",
-	"performanceinspector-beta-desc": "Una herramienta para recopilar información de rendimiento de varios componentes de MediaWiki por página específica y, posteriormente, mostrarla al usuario.",
 	"performanceinspector-desc": "Muestra mediciones de rendimiento de las páginas",
 	"performanceinspector-portlet-link": "Inspector de rendimiento",
 	"performanceinspector-dialog-title": "Inspector de rendimiento",

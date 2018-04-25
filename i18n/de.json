@@ -4,8 +4,8 @@
 			"Metalhead64"
 		]
 	},
-	"performanceinspector-beta": "Leistungsinspektor",
-	"performanceinspector-beta-desc": "Ein Werkzeug zum Sammeln leistungsbezogener Informationen von verschiedenen Teilen von MediaWiki für eine angegebene Seite und stellt sie dem Benutzer dar.",
+	"performanceinspector-pref-label": "Leistungsinspektor aktivieren",
+	"performanceinspector-pref-help": "Sammelt leistungsbezogene Informationen für die aktuelle Seite und zeigt sie über einen Link in der Seitenleiste an. Nur im Hauptnamensraum verfügbar.",
 	"performanceinspector-desc": "Ermöglicht die Anzeige von Metriken zur Seitenleistung",
 	"performanceinspector-portlet-link": "Leistungsinspektor",
 	"performanceinspector-dialog-title": "Leistungsinspektor",
