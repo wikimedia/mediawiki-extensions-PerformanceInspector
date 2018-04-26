@@ -4,6 +4,8 @@
 			"Bjankuloski06"
 		]
 	},
+	"performanceinspector-pref-label": "Овозможи го проверувачот на исполнителност",
+	"performanceinspector-pref-help": "Собира податоци за исполнителноста на тековната страница и ги дава на врска во страничникот. Важи само за главниот именски простор.",
 	"performanceinspector-desc": "Прикажува податоци за исполнителноста на страницата",
 	"performanceinspector-portlet-link": "Проверувач на исполнителност",
 	"performanceinspector-dialog-title": "Проверувач на исполнителност",

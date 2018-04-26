@@ -7,6 +7,8 @@
 			"Urhixidur"
 		]
 	},
+	"performanceinspector-pref-label": "Activer l’inspecteur de performance",
+	"performanceinspector-pref-help": "Collecte les informations relatives à la performance pour la page actuelle et les expose via le lien de la barre latérale. Disponible seulement dans l’espace de noms principal.",
 	"performanceinspector-desc": "Affiche la page des métriques de performance",
 	"performanceinspector-portlet-link": "Inspecteur de performance",
 	"performanceinspector-dialog-title": "Inspecteur de performance",

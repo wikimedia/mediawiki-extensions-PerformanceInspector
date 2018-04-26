@@ -4,6 +4,8 @@
 			"Liuxinyu970226"
 		]
 	},
+	"performanceinspector-pref-label": "启用性能检查器",
+	"performanceinspector-pref-help": "为当前页面收集性能相关信息，并通过边栏链接揭示信息。只在主名字空间可用。",
 	"performanceinspector-desc": "显示页面性能标准",
 	"performanceinspector-portlet-link": "性能检查器",
 	"performanceinspector-dialog-title": "性能检查器",

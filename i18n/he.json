@@ -5,6 +5,8 @@
 			"Amire80"
 		]
 	},
+	"performanceinspector-pref-label": "הפעלת מידע על ביצועים",
+	"performanceinspector-pref-help": "ליקוט מידע על ביצועים עבור הדף הנוכחי והצגתו באמצעות לחיצה על קישור בתפריט הצד. אפשרות זו זמינה במרחב הראשי בלבד.",
 	"performanceinspector-desc": "הצגת מדדים ביצועיים עבור דפים",
 	"performanceinspector-portlet-link": "מידע על הביצועים",
 	"performanceinspector-dialog-title": "מידע על הביצועים",
