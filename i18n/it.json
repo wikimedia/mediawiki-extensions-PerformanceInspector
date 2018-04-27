@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Sarah Bernabei"
 		]
 	},
+	"performanceinspector-pref-label": "Attivare l'ispettore della prestazione",
 	"performanceinspector-dialog-cancel": "Annulla",
 	"performanceinspector-modules-summary-total-size": "La dimensione totale di tutti i moduli",
 	"performanceinspector-modules-css-column-module": "Modulo",
