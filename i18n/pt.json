@@ -4,6 +4,8 @@
 			"Hamilton Abreu"
 		]
 	},
+	"performanceinspector-pref-label": "Ativar o inspetor de desempenho",
+	"performanceinspector-pref-help": "Recolhe informação relativa ao desempenho da página atual e expõe-a através de uma hiperligação na barra lateral. Só disponível no espaço nominal (domínio) principal.",
 	"performanceinspector-desc": "Mostra métricas de desempenho das páginas",
 	"performanceinspector-portlet-link": "Inspetor de desempenho",
 	"performanceinspector-dialog-title": "Inspetor de desempenho",

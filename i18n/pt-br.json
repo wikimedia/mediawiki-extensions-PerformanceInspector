@@ -4,6 +4,8 @@
 			"Eduardo Addad de Oliveira"
 		]
 	},
+	"performanceinspector-pref-label": "Ativar inspetor de desempenho",
+	"performanceinspector-pref-help": "Coleta informações relacionadas ao desempenho para a página atual e as expõe por meio de um link da barra lateral. Disponível apenas no namespace principal.",
 	"performanceinspector-desc": "Mostra métricas de desempenho das páginas",
 	"performanceinspector-portlet-link": "Inspetor de desempenho",
 	"performanceinspector-dialog-title": "Inspetor de desempenho",

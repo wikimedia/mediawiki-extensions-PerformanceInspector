@@ -6,6 +6,7 @@
 			"KATRINE1992"
 		]
 	},
+	"performanceinspector-pref-label": "Activar el inspector de rendimiento",
 	"performanceinspector-desc": "Muestra mediciones de rendimiento de las páginas",
 	"performanceinspector-portlet-link": "Inspector de rendimiento",
 	"performanceinspector-dialog-title": "Inspector de rendimiento",
