@@ -5,6 +5,8 @@
 			"ديفيد"
 		]
 	},
+	"performanceinspector-pref-label": "تمكين مفتش الأداء",
+	"performanceinspector-pref-help": "يجمع معلومات متعلقة بالأداء للصفحة الحالية ويعرضها عبر رابط الشريط الجانبي، متاح فقط في النطاق الرئيسي.",
 	"performanceinspector-desc": "يعرض مقاييس أداء الصفحة",
 	"performanceinspector-portlet-link": "مفتش الأداء",
 	"performanceinspector-dialog-title": "مفتش الأداء",
