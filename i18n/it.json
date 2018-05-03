@@ -6,6 +6,7 @@
 		]
 	},
 	"performanceinspector-pref-label": "Attiva l'ispettore delle prestazioni",
+	"performanceinspector-pref-help": "Raccoglie informazioni relative alle prestazioni per la pagina attuale e le espone tramite un collegamento della barra laterale. Disponibile solo nel namespace principale.",
 	"performanceinspector-dialog-cancel": "Annulla",
 	"performanceinspector-modules-summary-total-size": "La dimensione totale di tutti i moduli",
 	"performanceinspector-modules-css-column-module": "Modulo",

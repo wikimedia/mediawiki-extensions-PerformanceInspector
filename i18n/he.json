@@ -48,7 +48,7 @@
 	"performanceinspector-newpp-ppvisitednodes": "מספר הצמתים שקדם־המפענח ביקר בהם",
 	"performanceinspector-newpp-ppgeneratednodes": "מספר הצמתים שקדם־המפענח יצר",
 	"performanceinspector-newpp-postexpandincludesize": "הגודל המוכלל לאחר הפריסה (בבייטים)",
-	"performanceinspector-newpp-templateargumentsize": "גודל פרמטרי התבנית (בבייטים)",
+	"performanceinspector-newpp-templateargumentsize": "גודל פרמטרי התבניות (בבייטים)",
 	"performanceinspector-newpp-expansiondepth": "עומק הפריסה הגבוה ביותר",
 	"performanceinspector-newpp-expensivefunctioncount": "מספר פונקציות המפענח שגוזלות משאבים",
 	"performanceinspector-newpp-timingprofile": "תזמון התבניות",
