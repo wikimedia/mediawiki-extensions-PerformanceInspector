@@ -4,6 +4,8 @@
 			"Xuacu"
 		]
 	},
+	"performanceinspector-pref-label": "Activar l'inspector de rindimientu",
+	"performanceinspector-pref-help": "Collecha información rellacionada col rindimientu de la páxina actual y preséntala con un enllaz na barra llateral. Disponible namái nel espaciu de nomes principal.",
 	"performanceinspector-desc": "Amuesa midíes de rindimientu de les páxines",
 	"performanceinspector-portlet-link": "Inspector de rindimientu",
 	"performanceinspector-dialog-title": "Inspector de rindimientu",
