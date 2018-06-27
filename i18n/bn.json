@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aftabuzzaman"
+			"Aftabuzzaman",
+			"আফতাবুজ্জামান"
 		]
 	},
 	"performanceinspector-modules-css-used-selectors-values": "$1 ($3টির $2টি)",
