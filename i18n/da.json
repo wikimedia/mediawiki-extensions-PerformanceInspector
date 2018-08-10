@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"performanceinspector-modules-css-column-source": "Kilde",
+	"performanceinspector-imagesize-column-image-name": "Navn",
+	"performanceinspector-imagesize-column-size": "Størrelse",
+	"performanceinspector-imagesize-column-image-extra": "Ekstra",
+	"performanceinspector-imagesize-too-big": "Advarsel",
+	"performanceinspector-newpp-column-name": "Navn",
+	"performanceinspector-newpp-column-value": "Værdi",
+	"performanceinspector-newpp-template-time-report-column-name": "Navn",
+	"performanceinspector-newpp-cachereport-now": "Nu"
+}
