@@ -30,5 +30,11 @@
 	"performanceinspector-newpp-column-value": "مقدار",
 	"performanceinspector-newpp-template-time-report-column-name": "نام",
 	"performanceinspector-newpp-template-time-report-column-real": "واقعی",
+	"performanceinspector-newpp-template-time-report-column-calls": "تماس‌ها",
+	"performanceinspector-newpp-parsed-by": "تجزیه‌شده توسط",
+	"performanceinspector-newpp-cached-time": "زمان کاشه",
+	"performanceinspector-newpp-parsed-ttl": "انقضای کاشه",
+	"performanceinspector-newpp-dynamic-content": "محتوای پویا",
+	"performanceinspector-newpp-cachereport": "کاشه تجزیه‌کننده",
 	"performanceinspector-newpp-cachereport-now": "اکنون"
 }
