@@ -13,6 +13,7 @@
 	"performanceinspector-modules-size-name": "اندازه پودمان",
 	"performanceinspector-modules-size-label": "اندازه پودمان",
 	"performanceinspector-modules-css-column-module": "پودمان",
+	"performanceinspector-modules-css-column-used-selectors": "سلکتورهای استفاده شده",
 	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 از $3)",
 	"performanceinspector-modules-css-column-source": "منبع",
 	"performanceinspector-modules-localstorage-hits": "برخورد",
