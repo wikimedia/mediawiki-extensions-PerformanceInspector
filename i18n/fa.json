@@ -27,6 +27,7 @@
 	"performanceinspector-imagesize-column-image-extra": "اضافه",
 	"performanceinspector-imagesize-too-big": "هشدار",
 	"performanceinspector-newpp-cputime": "زمان مصرف در CPU (ثانیه)",
+	"performanceinspector-newpp-walltime": "زمان مصرفی واقعی",
 	"performanceinspector-newpp-column-name": "نام",
 	"performanceinspector-newpp-column-value": "مقدار",
 	"performanceinspector-newpp-template-time-report-column-name": "نام",
@@ -37,5 +38,6 @@
 	"performanceinspector-newpp-parsed-ttl": "انقضای کاشه",
 	"performanceinspector-newpp-dynamic-content": "محتوای پویا",
 	"performanceinspector-newpp-cachereport": "کاشه تجزیه‌کننده",
-	"performanceinspector-newpp-cachereport-now": "اکنون"
+	"performanceinspector-newpp-cachereport-now": "اکنون",
+	"performanceinspector-pagesize-summary": "اندازه HTML $1 ($2 فشرده‌شده) است."
 }
