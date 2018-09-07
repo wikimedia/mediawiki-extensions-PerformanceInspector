@@ -14,8 +14,12 @@
 			}
 			return {
 				name: name,
-				used: mw.msg( 'performanceinspector-modules-css-used-selectors-values', stats.total !== 0 ?
-						( stats.used / stats.total * 100 ).toFixed( 2 ) + '%' : '100%', stats.used, stats.total ),
+				used: mw.msg(
+						'performanceinspector-modules-css-used-selectors-values',
+						stats.total !== 0 ? ( stats.used / stats.total * 100 ).toFixed( 2 ) + '%' : '100%',
+						stats.used,
+						stats.total
+					),
 				results: stats.unused,
 				index: index
 			};
@@ -24,8 +28,12 @@
 		function toView( name, stats, index ) {
 			return {
 				name: name,
-				selectors: mw.msg( 'performanceinspector-modules-css-used-selectors-values', stats.total !== 0 ?
-						( stats.matched / stats.total * 100 ).toFixed( 2 ) + '%' : null, stats.matched, stats.total ),
+				selectors: mw.msg(
+						'performanceinspector-modules-css-used-selectors-values',
+						stats.total !== 0 ? ( stats.matched / stats.total * 100 ).toFixed( 2 ) + '%' : null,
+						stats.matched,
+						stats.total
+					),
 				unmatchedSelectors: stats.unmatched,
 				index: index
 			};
@@ -42,7 +50,7 @@
 				},
 				style = document.createElement( 'style' ),
 				// Only match embedded data URIs.
-				urlRegex = /url\(\s*[\'"]?(data:[^\)\'"]*?)[\'"]?\s*\)/g;
+				urlRegex = /url\(\s*['"]?(data:[^)'"]*?)['"]?\s*\)/g;
 			style.textContent = css;
 			document.body.appendChild( style );
 			$.each( style.sheet.cssRules, function ( index, rule ) {
@@ -66,7 +74,10 @@
 							typeof rule.style[ prop ] === 'string' &&
 							rule.style[ prop ].match( urlRegex );
 						if ( urlMatches ) {
-							images.push( { prop: dashCase( prop ), value: String( rule.style[ prop ] ) } );
+							images.push( {
+								prop: dashCase( prop ),
+								value: String( rule.style[ prop ] )
+							} );
 						}
 					}
 					result.images.total += images.length;

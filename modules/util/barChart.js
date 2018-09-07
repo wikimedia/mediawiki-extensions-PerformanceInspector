@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-implicit-globals
 function generate( html, name ) {
 
 	var values = [],
