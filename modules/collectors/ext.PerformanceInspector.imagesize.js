@@ -1,6 +1,7 @@
 ( function ( mw, $ ) {
 	/**
-	  	Collect image information. Make a ajax request per image or use Resource Timinng API and check the size from the response header.
+	 * Collect image information. Make a ajax request per image or use Resource Timing API and check
+	 * the size from the response header.
 	*/
 	var imageSizeCollector = function runImageSizeCollector() {
 		var warningLimitInBytes = 1000000,
@@ -21,7 +22,10 @@
 				// do we have support size but not nextHop?
 				// Then we are sure we are not FF but in the long run this
 				// check is evil, Chrome and others will support nextHop soon.
-				if ( wp.getEntriesByType( 'resource' )[ 0 ].encodedBodySize && !wp.getEntriesByType( 'resource' )[ 0 ].nextHopProtocol ) {
+				if (
+					wp.getEntriesByType( 'resource' )[ 0 ].encodedBodySize &&
+					!wp.getEntriesByType( 'resource' )[ 0 ].nextHopProtocol
+				) {
 					return true;
 				}
 			}
@@ -92,7 +96,9 @@
 						for ( i = 0; i < values.length; i++ ) {
 							sizeRaw = Number( values[ i ].contentLength );
 							images.push( {
-									name: getImageName( values[ i ].url.substring( values[ i ].url.lastIndexOf( '/' ) + 1 ) ),
+									name: getImageName(
+										values[ i ].url.substring( values[ i ].url.lastIndexOf( '/' ) + 1 )
+									),
 									url: values[ i ].url,
 									sizeRaw: sizeRaw,
 									size: humanSize( sizeRaw ),
@@ -104,7 +110,12 @@
 						images.sort( function ( a, b ) { return b.sizeRaw - a.sizeRaw; } );
 						deferred.resolve( {
 							summary: {
-								imagesSummary: mw.msg( 'performanceinspector-modules-summary-images', images.length, humanSize( totalSize ), warnings )
+								imagesSummary: mw.msg(
+									'performanceinspector-modules-summary-images',
+									images.length,
+									humanSize( totalSize ),
+									warnings
+								)
 							},
 							view: {
 								name: 'performanceinspector-imagesize-name',

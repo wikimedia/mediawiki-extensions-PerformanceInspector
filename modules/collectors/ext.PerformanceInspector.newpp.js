@@ -8,7 +8,10 @@
 		function generateMustacheView( parserReport ) {
 			var limitReport = [],
 				timingProfile = [],
-				templates = parserReport.limitreport && parserReport.limitreport.timingprofile || [],
+				templates =
+					parserReport.limitreport &&
+					parserReport.limitreport.timingprofile ||
+					[],
 				i, j, data, holder, item, cacheTime, ttlHuman;
 
 			// Push the data for the limit report
@@ -31,7 +34,12 @@
 						holder.push( data[ j ] );
 					}
 				}
-				timingProfile.push( { name: holder[ 3 ], percentreal: holder[ 0 ], real: holder[ 1 ], calls: holder[ 2 ] } );
+				timingProfile.push( {
+					name: holder[ 3 ],
+					percentreal: holder[ 0 ],
+					real: holder[ 1 ],
+					calls: holder[ 2 ]
+				} );
 			}
 
 			cacheTime = moment( parserReport.cachereport.timestamp, 'YYYYMMDDHHmmss' );
