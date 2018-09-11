@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"performanceinspector-newpp-column-name": "Navn",
+	"performanceinspector-newpp-column-value": "Verdi",
+	"performanceinspector-newpp-template-time-report-column-name": "Navn",
+	"performanceinspector-newpp-template-time-report-column-calls": "Kall",
+	"performanceinspector-newpp-dynamic-content": "Dynamisk innhold",
+	"performanceinspector-newpp-cachereport-now": "Nå"
+}
