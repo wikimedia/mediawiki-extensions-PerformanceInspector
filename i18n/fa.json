@@ -28,6 +28,8 @@
 	"performanceinspector-imagesize-too-big": "هشدار",
 	"performanceinspector-newpp-cputime": "زمان مصرف در CPU (ثانیه)",
 	"performanceinspector-newpp-walltime": "زمان مصرفی واقعی",
+	"performanceinspector-newpp-name": "داده‌های رخ‌نمانگاری تجزیه‌کننده",
+	"performanceinspector-newpp-label": "داده‌های رخ‌نمانگاری تجزیه‌کننده",
 	"performanceinspector-newpp-column-name": "نام",
 	"performanceinspector-newpp-column-value": "مقدار",
 	"performanceinspector-newpp-template-time-report-column-name": "نام",
