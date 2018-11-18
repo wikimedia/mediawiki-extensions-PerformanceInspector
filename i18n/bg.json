@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"StanProg"
+			"StanProg",
+			"ShockD"
 		]
 	},
-	"performanceinspector-dialog-cancel": "Отказ"
+	"performanceinspector-dialog-cancel": "Отказ",
+	"performanceinspector-modules-css-column-module": "Модул"
 }
