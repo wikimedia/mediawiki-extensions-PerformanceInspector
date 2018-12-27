@@ -17,6 +17,11 @@
 	"performanceinspector-modules-localstorage-misses": "Huteja",
 	"performanceinspector-modules-localstorage-expired": "Vanhentunut",
 	"performanceinspector-modules-localstorage-totalsize": "Koko yhteensä",
+	"performanceinspector-imagesize-name": "Kuvan koko",
+	"performanceinspector-imagesize-label": "Kuvan koko",
+	"performanceinspector-imagesize-column-image-name": "Nimi",
+	"performanceinspector-imagesize-column-size": "Koko",
+	"performanceinspector-imagesize-too-big": "Varoitus",
 	"performanceinspector-newpp-column-name": "Nimi",
 	"performanceinspector-newpp-template-time-report-column-name": "Nimi"
 }
