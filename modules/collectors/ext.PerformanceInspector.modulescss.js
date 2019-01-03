@@ -166,7 +166,7 @@
 				var button = new OO.ui.ButtonWidget( {
 						label: mw.msg( 'performanceinspector-modules-css-show-details' ),
 						icon: 'info',
-						iconTitle: mw.msg( 'performanceinspector-modules-css-show-details' )
+						title: mw.msg( 'performanceinspector-modules-css-show-details' )
 					} );
 				button.on( 'click', function () {
 						$( button.$element ).closest( 'tr' ).next( 'tr.toggleable' ).toggle();
