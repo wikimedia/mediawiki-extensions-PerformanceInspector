@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Maroen1990",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"performanceinspector-pref-label": "تمكين مفتش الأداء",
@@ -15,8 +16,11 @@
 	"performanceinspector-modules-summary-total-size": "الحجم الإجمالي لجميع الوحدات",
 	"performanceinspector-modules-size-name": "حجم الوحدات",
 	"performanceinspector-modules-size-label": "حجم الوحدات",
+	"performanceinspector-modules-css-name": "سي إس إس",
+	"performanceinspector-modules-css-label": "سي إس إس",
 	"performanceinspector-modules-css-column-module": "الوحدة",
 	"performanceinspector-modules-css-column-used-selectors": "المحددات المستعملة",
+	"performanceinspector-modules-css-column-url": "مسار",
 	"performanceinspector-modules-css-used-selectors-values": "$1 ($2 من $3)",
 	"performanceinspector-modules-css-url-description": "لكل مسار لـCSS يحتوي على الأنماط، احسب عدد المحددات، واحسب عدد المطابقات مقابل بعض العناصر الموجودة حاليا في DOM.",
 	"performanceinspector-modules-css-show-details": "تبديل التفاصيل",
@@ -56,6 +60,7 @@
 	"performanceinspector-newpp-template-time-report-column-name": "الاسم",
 	"performanceinspector-newpp-template-time-report-column-real": "الحقيقة",
 	"performanceinspector-newpp-template-time-report-column-calls": "الاستدعاءات",
+	"performanceinspector-newpp-scribunto": "سكريبنتو",
 	"performanceinspector-newpp-parsed-by": "حلله",
 	"performanceinspector-newpp-cached-time": "وقت التخزين المؤقت",
 	"performanceinspector-newpp-parsed-ttl": "انتهاء صلاحية ذاكرة التخزين المؤقت",
