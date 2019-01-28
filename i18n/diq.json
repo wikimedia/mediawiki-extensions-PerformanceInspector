@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kumkumuk"
+			"Kumkumuk",
+			"Mirzali"
 		]
 	},
+	"performanceinspector-dialog-cancel": "Bıtexelne",
+	"performanceinspector-modules-css-column-source": "Çıme",
 	"performanceinspector-imagesize-too-big": "Tembe kem"
 }
