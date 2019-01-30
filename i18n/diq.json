@@ -7,5 +7,8 @@
 	},
 	"performanceinspector-dialog-cancel": "Bıtexelne",
 	"performanceinspector-modules-css-column-source": "Çıme",
-	"performanceinspector-imagesize-too-big": "Tembe kem"
+	"performanceinspector-imagesize-column-image-name": "Name",
+	"performanceinspector-imagesize-too-big": "Tembe kem",
+	"performanceinspector-newpp-column-name": "Name",
+	"performanceinspector-newpp-template-time-report-column-name": "Name"
 }
