@@ -36,7 +36,7 @@ class PerformanceInspectorHooks {
 		$testModules['qunit']['ext.performanceInspector.tests'] = [
 			'scripts' => [ 'tests/qunit/ext.performanceInspector.test.js' ],
 			'dependencies' => [ 'ext.PerformanceInspector.analyze' ],
-			'localBasePath' => __DIR__,
+			'localBasePath' => dirname( __DIR__ ),
 			'remoteExtPath' => 'PerformanceInspector'
 		];
 	}

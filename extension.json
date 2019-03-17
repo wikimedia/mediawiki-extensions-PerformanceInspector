@@ -132,7 +132,7 @@
 		"remoteExtPath": "PerformanceInspector/modules"
 	},
 	"AutoloadClasses": {
-		"PerformanceInspectorHooks": "PerformanceInspector.hooks.php"
+		"PerformanceInspectorHooks": "includes/PerformanceInspectorHooks.php"
 	},
 	"manifest_version": 1
 }
