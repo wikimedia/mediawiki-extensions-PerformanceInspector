@@ -3,7 +3,8 @@
 		"authors": [
 			"Macofe",
 			"Fitoschido",
-			"KATRINE1992"
+			"KATRINE1992",
+			"Ciencia Al Poder"
 		]
 	},
 	"performanceinspector-pref-label": "Activar el inspector de rendimiento",
@@ -52,8 +53,8 @@
 	"performanceinspector-newpp-template-time-report-column-name": "Nombre",
 	"performanceinspector-newpp-template-time-report-column-calls": "Llamadas",
 	"performanceinspector-newpp-parsed-by": "Analizado por",
-	"performanceinspector-newpp-cached-time": "Tiempo en antememoria",
-	"performanceinspector-newpp-parsed-ttl": "Caducidad de antememoria",
+	"performanceinspector-newpp-cached-time": "Tiempo en caché",
+	"performanceinspector-newpp-parsed-ttl": "Caducidad de caché",
 	"performanceinspector-newpp-dynamic-content": "Contenido dinámico",
 	"performanceinspector-newpp-cachereport": "Antememoria de analizador",
 	"performanceinspector-modules-localstorage-description": "Cuántos módulos de ResourceLoader se cargaron a partir del almacenamiento local.",
