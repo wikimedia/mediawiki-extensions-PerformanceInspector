@@ -11,6 +11,8 @@
 	"performanceinspector-dialog-summary": "Yhteenveto",
 	"performanceinspector-dialog-cancel": "Peru",
 	"performanceinspector-modules-summary-total-size": "Kaikkien moduulien koko yhteensä",
+	"performanceinspector-modules-css-name": "CSS",
+	"performanceinspector-modules-css-label": "CSS",
 	"performanceinspector-modules-css-column-module": "Moduuli",
 	"performanceinspector-modules-localstorage-disabled": "Paikallinen tallennustila (local storage) ei ole käytössä.",
 	"performanceinspector-modules-localstorage-hits": "Osumia",
