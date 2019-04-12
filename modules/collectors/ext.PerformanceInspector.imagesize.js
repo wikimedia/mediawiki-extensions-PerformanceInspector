@@ -107,7 +107,9 @@
 
 							totalSize += sizeRaw;
 						}
-						images.sort( function ( a, b ) { return b.sizeRaw - a.sizeRaw; } );
+						images.sort( function ( a, b ) {
+							return b.sizeRaw - a.sizeRaw;
+						} );
 						deferred.resolve( {
 							summary: {
 								imagesSummary: mw.msg(
