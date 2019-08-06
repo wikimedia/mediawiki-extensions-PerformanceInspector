@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Romaine"
 		]
 	},
 	"performanceinspector-portlet-link": "Prestatie inspecteur",
@@ -20,6 +21,7 @@
 	"performanceinspector-modules-localstorage-name": "Lokale opslag",
 	"performanceinspector-modules-localstorage-label": "Lokale opslag",
 	"performanceinspector-modules-localstorage-disabled": "Lokale opslag is uitgeschakeld.",
+	"performanceinspector-modules-localstorage-hits": "Hits",
 	"performanceinspector-modules-localstorage-expired": "Verlopen",
 	"performanceinspector-modules-localstorage-totalsize": "Totale grootte",
 	"performanceinspector-imagesize-name": "Afbeeldingsgrootte",
