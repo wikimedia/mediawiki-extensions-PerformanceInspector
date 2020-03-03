@@ -25,7 +25,7 @@
 	"performanceinspector-modules-localstorage-name": "Локальне сховище",
 	"performanceinspector-modules-localstorage-label": "Локальне сховище",
 	"performanceinspector-modules-localstorage-disabled": "Локальне сховище вимкнено.",
-	"performanceinspector-modules-localstorage-hits": "Спрацювання",
+	"performanceinspector-modules-localstorage-hits": "Спрацьовування",
 	"performanceinspector-modules-localstorage-misses": "Пропуски",
 	"performanceinspector-modules-localstorage-expired": "Час вийшов",
 	"performanceinspector-modules-localstorage-totalsize": "Загальний розмір",
