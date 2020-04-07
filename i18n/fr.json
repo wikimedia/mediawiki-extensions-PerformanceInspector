@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gomoko",
-			"Wladek92",
 			"Djiboun",
-			"Urhixidur"
+			"Gomoko",
+			"Urhixidur",
+			"Wladek92"
 		]
 	},
 	"performanceinspector-pref-label": "Activer l’inspecteur de performance",

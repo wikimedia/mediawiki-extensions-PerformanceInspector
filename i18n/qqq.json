@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Liuxinyu970226",
-			"Robby",
-			"Amire80"
+			"Robby"
 		]
 	},
 	"performanceinspector-pref-label": "The label of the option to enable the extension on the Preferences page",
