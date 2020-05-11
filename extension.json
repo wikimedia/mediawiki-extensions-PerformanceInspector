@@ -130,7 +130,7 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "PerformanceInspector/modules"
 	},
-	"QunitTestMobile": {
+	"QUnitTestModule": {
 		"localBasePath": "tests/qunit",
 		"remoteExtPath": "PerformanceInspector/tests/qunit",
 		"scripts": [
