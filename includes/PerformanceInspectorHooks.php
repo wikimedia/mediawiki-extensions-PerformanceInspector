@@ -30,17 +30,6 @@ class PerformanceInspectorHooks {
 		}
 	}
 
-	public static function onResourceLoaderTestModules( array &$testModules,
-		ResourceLoader &$resourceLoader
-	) {
-		$testModules['qunit']['ext.performanceInspector.tests'] = [
-			'scripts' => [ 'tests/qunit/ext.performanceInspector.test.js' ],
-			'dependencies' => [ 'ext.PerformanceInspector.analyze' ],
-			'localBasePath' => dirname( __DIR__ ),
-			'remoteExtPath' => 'PerformanceInspector'
-		];
-	}
-
 	/**
 	 * Handler for the GetPreferences hook.
 	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/GetPreferences

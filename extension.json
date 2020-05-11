@@ -9,7 +9,6 @@
 	"Hooks": {
 		"BeforePageDisplay": [ "PerformanceInspectorHooks::onBeforePageDisplay" ],
 		"BaseTemplateToolbox": [ "PerformanceInspectorHooks::onBaseTemplateToolbox" ],
-		"ResourceLoaderTestModules": [ "PerformanceInspectorHooks::onResourceLoaderTestModules" ],
 		"GetPreferences": [ "PerformanceInspectorHooks::onGetPreferences" ]
 	},
 	"MessagesDirs": {
@@ -130,6 +129,16 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
 		"remoteExtPath": "PerformanceInspector/modules"
+	},
+	"QunitTestMobile": {
+		"localBasePath": "tests/qunit",
+		"remoteExtPath": "PerformanceInspector/tests/qunit",
+		"scripts": [
+			"ext.performanceInspector.test.js"
+		],
+		"dependencies": [
+			"ext.PerformanceInspector.analyze"
+		]
 	},
 	"AutoloadClasses": {
 		"PerformanceInspectorHooks": "includes/PerformanceInspectorHooks.php"
