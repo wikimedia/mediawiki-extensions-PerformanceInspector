@@ -143,5 +143,5 @@
 	"AutoloadClasses": {
 		"PerformanceInspectorHooks": "includes/PerformanceInspectorHooks.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
