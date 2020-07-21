@@ -1,7 +1,7 @@
 ( function ( mw ) {
 	/**
-	Collect the size of the page using the Navigation Timing API v2
-	*/
+	 * Collect the size of the page using the Navigation Timing API v2
+	 */
 	var pageSizeCollector = function runPageSizeCollector() {
 			var humanSize = module.exports.humanSize,
 			entry,

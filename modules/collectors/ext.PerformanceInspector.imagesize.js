@@ -2,7 +2,7 @@
 	/**
 	 * Collect image information. Make a ajax request per image or use Resource Timing API and check
 	 * the size from the response header.
-	*/
+	 */
 	var imageSizeCollector = function runImageSizeCollector() {
 		var warningLimitInBytes = 1000000,
 			totalSize = 0,
