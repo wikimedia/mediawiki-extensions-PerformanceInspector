@@ -7,6 +7,10 @@
  */
 
 class PerformanceInspectorHooks {
+	/**
+	 * @param OutputPage &$out
+	 * @param Skin &$skin
+	 */
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 		$title = $out->getTitle();
 		$user = $out->getUser();
@@ -17,6 +21,10 @@ class PerformanceInspectorHooks {
 		}
 	}
 
+	/**
+	 * @param BaseTemplate $baseTemplate
+	 * @param array &$toolbox
+	 */
 	public static function onBaseTemplateToolbox( BaseTemplate $baseTemplate, array &$toolbox ) {
 		$title = $baseTemplate->getSkin()->getTitle();
 		$user = $baseTemplate->getSkin()->getUser();
