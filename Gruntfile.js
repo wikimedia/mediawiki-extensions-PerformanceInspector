@@ -4,7 +4,6 @@ module.exports = function ( grunt ) {
 
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-eslint' );
-	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-stylelint' );
 
 	grunt.initConfig( {
@@ -14,17 +13,13 @@ module.exports = function ( grunt ) {
 			},
 			all: [
 				'modules/**/*.js',
-				'tests/**/*.js'
-			]
-		},
-		banana: conf.MessagesDirs,
-		jsonlint: {
-			all: [
+				'tests/**/*.js',
 				'**/*.json',
 				'!node_modules/**',
 				'!vendor/**'
 			]
 		},
+		banana: conf.MessagesDirs,
 		stylelint: {
 			all: [
 				'**/*.css',
@@ -34,6 +29,6 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'test', [ 'eslint', 'jsonlint', 'banana', 'stylelint' ] );
+	grunt.registerTask( 'test', [ 'eslint', 'banana', 'stylelint' ] );
 	grunt.registerTask( 'default', 'test' );
 };
