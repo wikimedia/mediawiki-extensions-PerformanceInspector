@@ -1,19 +1,21 @@
 {
 	"root": true,
-	"extends": "wikimedia",
+	"extends": [
+		"wikimedia",
+		"wikimedia/mediawiki"
+	],
 	"env": {
 		"browser": true,
 		"jquery": true,
 		"qunit": true
 	},
 	"globals": {
-		"OO": false,
-		"mediaWiki": false,
-		"require": false
+		"mediaWiki": false
 	},
 	"rules": {
 		"valid-jsdoc": 0,
 		"indent": 0,
-		"no-shadow": "warn"
+		"no-shadow": "warn",
+		"mediawiki/msg-doc": "warn"
 	}
 }
