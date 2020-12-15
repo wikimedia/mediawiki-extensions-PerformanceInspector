@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Abbas dhothar"
+		]
+	},
+	"performanceinspector-newpp-cputime": "سی پی یو ویلہ ورتوں",
+	"performanceinspector-newpp-walltime": "حقیقی ویلہ ورتوں",
+	"performanceinspector-newpp-ppvisitednodes": "پری پروسیسر لوڈ گنتی دورہ",
+	"performanceinspector-newpp-postexpandincludesize": "بعد وسعت شامل سائز (بائٹاں)",
+	"performanceinspector-newpp-templateargumentsize": "سانچہ دلیل سائز (بائٹاں)",
+	"performanceinspector-newpp-expansiondepth": "اعلی توسیع دی گہرائی",
+	"performanceinspector-newpp-expensivefunctioncount": "پرسر تجزیہ دی گنتی",
+	"performanceinspector-newpp-name": "پرسر پروفائلنگ ڈیٹا"
+}
