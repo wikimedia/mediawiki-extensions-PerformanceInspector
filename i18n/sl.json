@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eleassar",
 			"Janezdrilc"
 		]
 	},
-	"performanceinspector-modules-css-column-module": "Modul"
+	"performanceinspector-dialog-cancel": "Prekliči",
+	"performanceinspector-modules-css-column-module": "Modul",
+	"performanceinspector-modules-css-column-source": "Vir"
 }
