@@ -16,6 +16,7 @@
 		"valid-jsdoc": 0,
 		"indent": 0,
 		"no-shadow": "warn",
-		"mediawiki/msg-doc": "warn"
+		"mediawiki/msg-doc": "warn",
+		"compat/compat": "warn"
 	}
 }
