@@ -4,6 +4,7 @@
 			"Djiboun",
 			"Gomoko",
 			"Urhixidur",
+			"Verdy p",
 			"Wladek92"
 		]
 	},
@@ -55,6 +56,7 @@
 	"performanceinspector-newpp-label": "Données de profilage de l’analyseur",
 	"performanceinspector-newpp-column-name": "Nom",
 	"performanceinspector-newpp-column-value": "Valeur",
+	"performanceinspector-newpp-value-and-limit": "$1 / $2",
 	"performanceinspector-newpp-template-time-report-column-name": "Nom",
 	"performanceinspector-newpp-template-time-report-column-real": "Réel",
 	"performanceinspector-newpp-template-time-report-column-calls": "Appels",
